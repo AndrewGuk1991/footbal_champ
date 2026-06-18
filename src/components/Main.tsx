@@ -1,4 +1,6 @@
 import {Box, Container} from "@mui/material";
+import {LeagueTable} from "./LeagueTable.tsx";
+import {AjaxCard} from "./AjaxCard.tsx";
 
 
 export const Main = () => {
@@ -12,7 +14,8 @@ export const Main = () => {
             }}
         >
             <Container maxWidth="lg">
-                {}
+                <LeagueTable/>
+                <AjaxCard/>
             </Container>
         </Box>
     )
