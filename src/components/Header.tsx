@@ -14,7 +14,7 @@ export const Header = () => {
                     <MenuIcon />
                 </IconButton>
                 <Typography variant="h6" noWrap component="div">
-                    Моё Приложение
+                    Пинская любительская футбольная лига
                 </Typography>
             </Toolbar>
         </AppBar>
