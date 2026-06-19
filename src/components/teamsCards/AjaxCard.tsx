@@ -1,7 +1,8 @@
-import {Box, Typography} from "@mui/material";
-import {GetPlayers} from "../common/GetPlayers.tsx";
+import {Box} from "@mui/material";
+import {TeamCard} from "../TeamCard.tsx";
 
-const deffenders = [
+
+const ajaxDeffenders = [
     {
         name: 'Виталий',
         surname: 'Головчик',
@@ -24,7 +25,7 @@ const deffenders = [
     },
 ]
 
-const midfielders = [
+const ajaxMidfielders = [
     {
         name: 'Марк',
         surname: 'Кот',
@@ -47,7 +48,7 @@ const midfielders = [
     },
 ]
 
-const forwards = [
+const ajaxForwards = [
     {
         name: 'Вадим',
         surname:'Шикула',
@@ -73,13 +74,11 @@ const forwards = [
 export const AjaxCard = () => {
     return (
         <Box>
-            <h2>Состав команды Аякс:</h2>
-            <Typography>Защитники:</Typography>
-            <GetPlayers players={deffenders} />
-            <Typography>Полузащитники:</Typography>
-            <GetPlayers players={midfielders} />
-            <Typography>Нападающие:</Typography>
-            <GetPlayers players={forwards} />
+            <TeamCard
+                teamName={'Аякс'}
+                defenders={ajaxDeffenders}
+                midfielders={ajaxMidfielders}
+                forwards={ajaxForwards}/>
         </Box>
     )
 }
