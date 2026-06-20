@@ -1,16 +1,15 @@
 import {Box, List, ListItem, ListItemButton, ListItemText} from "@mui/material";
-import {PATH} from "./Main.tsx";
 import {NavLink} from "react-router-dom";
+import {APP_ROUTES} from "../common/routes.ts";
 
 
 export const SideBar = () => {
 
     const menuItems = [
-        { text: 'Расписание игр', path: PATH.SCHEDULE },
-        { text: 'Команды', path: PATH.TEAMS },
-        { text: 'Таблица', path: PATH.TABLE },
+        { text: 'Расписание игр', path: APP_ROUTES.SCHEDULE },
+        { text: 'Команды', path: APP_ROUTES.TEAMS },
+        { text: 'Таблица', path: APP_ROUTES.TABLE },
     ];
-
 
     return (
         <Box sx={{ textAlign: 'center'}}>

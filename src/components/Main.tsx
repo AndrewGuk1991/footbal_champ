@@ -4,13 +4,7 @@ import {Teams} from "./Teams.tsx";
 import {Navigate, Route, Routes} from "react-router-dom";
 import {GameSchedule} from "./GameSchedule.tsx";
 import {NotFound} from "./NotFound.tsx";
-
-export const PATH = {
-    TEAMS: '/teams',
-    TABLE: '/table',
-    SCHEDULE: '/schedule',
-    NOTFOUND: '/notfound'
-} as const
+import {APP_ROUTES} from "../common/routes.ts";
 
 export const Main = () => {
     return (
@@ -24,12 +18,12 @@ export const Main = () => {
         >
             <Container maxWidth="lg">
                 <Routes>
-                    <Route path={'/'} element={<Navigate to={PATH.SCHEDULE} replace/>}/>
-                    <Route path={PATH.TEAMS} element={<Teams/>}/>
-                    <Route path={PATH.TABLE} element={<LeagueTable/>}/>
-                    <Route path={PATH.SCHEDULE} element={<GameSchedule/>}/>
-                    <Route path={PATH.NOTFOUND} element={<NotFound/>}/>
-                    <Route path="*" element={<Navigate to={PATH.NOTFOUND}/>} />
+                    <Route path={'/'} element={<Navigate to={APP_ROUTES.SCHEDULE} replace/>}/>
+                    <Route path={`${APP_ROUTES.TEAMS}/*`} element={<Teams/>}/>
+                    <Route path={APP_ROUTES.TABLE} element={<LeagueTable/>}/>
+                    <Route path={APP_ROUTES.SCHEDULE} element={<GameSchedule/>}/>
+                    <Route path={APP_ROUTES.NOTFOUND} element={<NotFound/>}/>
+                    <Route path="*" element={<Navigate to={APP_ROUTES.NOTFOUND}/>} />
                 </Routes>
             </Container>
         </Box>
