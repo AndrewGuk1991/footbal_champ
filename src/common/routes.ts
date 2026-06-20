@@ -10,6 +10,10 @@ export const TEAMS_ROUTES = {
     AJAX: 'ajax',
     PINSKDREW: 'pinskdrew',
     SPUTNIK: 'sputnik',
-    PIKANT: 'pikant'
+    PIKANT: 'pikant',
+    DINAMO: 'dinamo',
+    ODYSSEY: 'odyssey',
+    VITYAZ: 'vityaz',
+    ARSENAL: 'arsenal',
 } as const
 
