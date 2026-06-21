@@ -6,6 +6,7 @@ export const APP_ROUTES = {
     NOTFOUND: '/notfound'
 } as const
 
+
 export const TEAMS_ROUTES = {
     AJAX: 'ajax',
     PINSKDREW: 'pinskdrew',

@@ -1,6 +1,6 @@
 import {Box, Typography} from "@mui/material";
 import {GetPlayers} from "../common/GetPlayers.tsx";
-import type {Player} from "../common/types.ts";
+import type {Player} from "../data/teamsData.ts";
 
 type TeamCardProps = {
     teamName: string;

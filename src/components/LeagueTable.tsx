@@ -8,25 +8,9 @@ import {
     Paper,
     Typography
 } from '@mui/material';
+import {TEAMS_DATA} from "../data/teamsData.ts";
 
-// 1. Выносим команды в чистый массив
-const teamsList = ['Пикант', 'Пинскдрев', 'Спутник', 'Аякс', 'Динамо', 'Одиссей', 'Витязь', 'Арсенал'];
-
-// 2. Ровно 9 столбцов (добавили 'Н' для соответствия футбольной статистике)
-const columns = ['№', 'Команда', 'И', 'В', 'Н', 'П', 'Мз', 'Разн', 'О'];
-
-// 3. Правильно генерируем строки: одна команда на одну строку
-export const rows = Array.from({ length: teamsList.length }, (_, index) => ({
-    id: index + 1,
-    team: teamsList[index], // Теперь здесь строка "Пикант", "Пинскдрев" и т.д.
-    mp: 10,
-    w: 5,
-    d: 3,
-    l: 2,
-    gf: 15,
-    dif: 3,
-    pts: 18
-}));
+const columns = ['№', 'Команда', 'И', 'В', 'Н', 'П', 'Мз', 'Мп', 'Разн', 'О'];
 
 export const LeagueTable = () => {
     return (
@@ -40,7 +24,6 @@ export const LeagueTable = () => {
                         {columns.map((col) => (
                             <TableCell
                                 key={col}
-                                // ИСПРАВЛЕНО: проверяем русское слово 'Команда'
                                 align={col === 'Команда' ? 'left' : 'center'}
                                 sx={{ fontWeight: 'bold' }}
                             >
@@ -52,18 +35,18 @@ export const LeagueTable = () => {
 
                 {/* Тело таблицы (8 строк по количеству команд) */}
                 <TableBody>
-                    {rows.map((row) => (
-                        <TableRow key={row.id} hover>
-                            <TableCell align="center">{row.id}</TableCell>
-                            {/* ИСПРАВЛЕНО: выводим row.team напрямую */}
-                            <TableCell align="left" sx={{ fontWeight: 'medium' }}>{row.team}</TableCell>
-                            <TableCell align="center">{row.mp}</TableCell>
-                            <TableCell align="center">{row.w}</TableCell>
-                            <TableCell align="center">{row.d}</TableCell>
-                            <TableCell align="center">{row.l}</TableCell>
-                            <TableCell align="center">{row.gf}</TableCell>
-                            <TableCell align="center">{row.dif}</TableCell>
-                            <TableCell align="center" sx={{ fontWeight: 'bold' }}>{row.pts}</TableCell>
+                    {Object.keys(TEAMS_DATA).map((teamKey) => (
+                        <TableRow key={teamKey} hover>
+                            <TableCell align="center">{TEAMS_DATA[teamKey].id}</TableCell>
+                            <TableCell align="left" sx={{ fontWeight: 'medium' }}>{TEAMS_DATA[teamKey].title}</TableCell>
+                            <TableCell align="center">{TEAMS_DATA[teamKey].games}</TableCell>
+                            <TableCell align="center">{TEAMS_DATA[teamKey].wins}</TableCell>
+                            <TableCell align="center">{TEAMS_DATA[teamKey].draws}</TableCell>
+                            <TableCell align="center">{TEAMS_DATA[teamKey].loses}</TableCell>
+                            <TableCell align="center">{TEAMS_DATA[teamKey].goalsScored}</TableCell>
+                            <TableCell align="center">{TEAMS_DATA[teamKey].goalsAgainst}</TableCell>
+                            <TableCell align="center">{TEAMS_DATA[teamKey].goalsDifference}</TableCell>
+                            <TableCell align="center" sx={{ fontWeight: 'bold' }}>{TEAMS_DATA[teamKey].points}</TableCell>
                         </TableRow>
                     ))}
                 </TableBody>

@@ -1,6 +1,5 @@
 // src/components/Teams.tsx
 import { List, ListItem, ListItemButton, ListItemText, Typography } from "@mui/material";
-import { rows } from "./LeagueTable";
 import { NavLink, Route, Routes } from "react-router-dom";
 import { TeamCardWrapper } from "./TeamCardWrapper.tsx";
 import { TEAMS_DATA } from "../data/teamsData.ts";
@@ -18,25 +17,27 @@ export const Teams = () => {
         return route || '';
     };
 
+    const teamsKeysList = Object.keys(TEAMS_DATA)
+
     return (
         <Routes>
             {/* Основной список команд */}
             <Route path="/" element={
                 <List component="ol" sx={{ listStyleType: 'decimal', pl: 4 }}>
                     <Typography variant="h4" sx={{ mb: 2 }}>Команды</Typography>
-                    {rows.map((row) => {
-                        const path = getTeamPath(row.team);
+                    {teamsKeysList.map((teamKey) => {
+                        const path = getTeamPath(TEAMS_DATA[teamKey].title);
 
                         // Если путь не найден (команды нет в TEAMS_DATA), не рендерим кнопку
                         if (!path) return null;
 
                         return (
-                            <ListItem key={row.id} sx={{ display: 'list-item' }} disablePadding>
+                            <ListItem key={teamKey} sx={{ display: 'list-item' }} disablePadding>
                                 <ListItemButton
                                     component={NavLink}
                                     to={path}
                                 >
-                                    <ListItemText primary={row.team} />
+                                    <ListItemText primary={TEAMS_DATA[teamKey].title} />
                                 </ListItemButton>
                             </ListItem>
                         );
