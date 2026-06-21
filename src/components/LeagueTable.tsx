@@ -33,7 +33,6 @@ export const LeagueTable = () => {
                     </TableRow>
                 </TableHead>
 
-                {/* Тело таблицы (8 строк по количеству команд) */}
                 <TableBody>
                     {Object.keys(TEAMS_DATA).map((teamKey) => (
                         <TableRow key={teamKey} hover>

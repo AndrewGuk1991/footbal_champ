@@ -1,8 +1,8 @@
 // src/components/Teams.tsx
-import { List, ListItem, ListItemButton, ListItemText, Typography } from "@mui/material";
-import { NavLink, Route, Routes } from "react-router-dom";
-import { TeamCardWrapper } from "./TeamCardWrapper.tsx";
-import { TEAMS_DATA } from "../data/teamsData.ts";
+import {List, ListItem, ListItemButton, ListItemText, Typography} from "@mui/material";
+import {NavLink, Route, Routes} from "react-router-dom";
+import {TEAMS_DATA} from "../data/teamsData.ts";
+import {TeamCard} from "./TeamCard.tsx";
 
 export const Teams = () => {
     // Динамический поиск ключа роута по русскому названию команды
@@ -46,7 +46,7 @@ export const Teams = () => {
             }/>
 
             {/* Один роут для ВСЕХ карточек команд */}
-            <Route path=":teamRoute" element={<TeamCardWrapper />} />
+            <Route path=":teamRoute" element={<TeamCard />} />
         </Routes>
     );
 };
