@@ -93,7 +93,7 @@ export const TEAMS_DATA: Record<string, TeamData> = {
         goalsScored: 35,
         goalsAgainst: 22,
         goalsDifference: '+13',
-        points: 25,
+        points: 24,
         defenders: [
             { name: 'Василий', surname: 'Кравчук', number: 4 },
             { name: 'Артем', surname: 'Мельник', number: 5 },

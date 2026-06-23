@@ -13,6 +13,21 @@ import {TEAMS_DATA} from "../data/teamsData.ts";
 const columns = ['№', 'Команда', 'И', 'В', 'Н', 'П', 'Мз', 'Мп', 'Разн', 'О'];
 
 export const LeagueTable = () => {
+
+    const sortedTeams = Object.values(TEAMS_DATA)
+        .sort((a, b) => {
+            // Сначала сортируем по очкам (по убыванию)
+            if (b.points !== a.points) {
+                return b.points - a.points;
+            }
+
+            // Если очки равны, преобразуем строки с разницей мячей в числа и сортируем по убыванию
+            const diffA = parseInt(a.goalsDifference, 10) || 0;
+            const diffB = parseInt(b.goalsDifference, 10) || 0;
+
+            return diffB - diffA;
+        });
+
     return (
         <TableContainer component={Paper} sx={{ maxWidth: 800, margin: '20px auto' }}>
             <Typography variant="h4">
@@ -34,18 +49,18 @@ export const LeagueTable = () => {
                 </TableHead>
 
                 <TableBody>
-                    {Object.keys(TEAMS_DATA).map((teamKey) => (
-                        <TableRow key={teamKey} hover>
-                            <TableCell align="center">{TEAMS_DATA[teamKey].id}</TableCell>
-                            <TableCell align="left" sx={{ fontWeight: 'medium' }}>{TEAMS_DATA[teamKey].title}</TableCell>
-                            <TableCell align="center">{TEAMS_DATA[teamKey].games}</TableCell>
-                            <TableCell align="center">{TEAMS_DATA[teamKey].wins}</TableCell>
-                            <TableCell align="center">{TEAMS_DATA[teamKey].draws}</TableCell>
-                            <TableCell align="center">{TEAMS_DATA[teamKey].loses}</TableCell>
-                            <TableCell align="center">{TEAMS_DATA[teamKey].goalsScored}</TableCell>
-                            <TableCell align="center">{TEAMS_DATA[teamKey].goalsAgainst}</TableCell>
-                            <TableCell align="center">{TEAMS_DATA[teamKey].goalsDifference}</TableCell>
-                            <TableCell align="center" sx={{ fontWeight: 'bold' }}>{TEAMS_DATA[teamKey].points}</TableCell>
+                    {sortedTeams.map((team, index) => (
+                        <TableRow key={team.id} hover>
+                            <TableCell align="center">{index + 1}</TableCell>
+                            <TableCell align="left" sx={{ fontWeight: 'medium' }}>{team.title}</TableCell>
+                            <TableCell align="center">{team.games}</TableCell>
+                            <TableCell align="center">{team.wins}</TableCell>
+                            <TableCell align="center">{team.draws}</TableCell>
+                            <TableCell align="center">{team.loses}</TableCell>
+                            <TableCell align="center">{team.goalsScored}</TableCell>
+                            <TableCell align="center">{team.goalsAgainst}</TableCell>
+                            <TableCell align="center">{team.goalsDifference}</TableCell>
+                            <TableCell align="center" sx={{ fontWeight: 'bold' }}>{team.points}</TableCell>
                         </TableRow>
                     ))}
                 </TableBody>
