@@ -4,6 +4,7 @@ export type Player = {
     name: string;
     surname: string;
     number: number;
+    goals?: number;
 }
 
 export type TeamData = {
@@ -42,15 +43,16 @@ export const TEAMS_DATA: Record<string, TeamData> = {
         ],
         midfielders: [
             { name: 'Марк', surname: 'Кот', number: 6 },
-            { name: 'Владимир', surname: 'Сидоревич', number: 7 },
+            { name: 'Владимир', surname: 'Сидоревич', number: 7, goals: 4 },
             { name: 'Андрей', surname: 'Гук', number: 8 },
             { name: 'Евгенний', surname: 'Радионов', number: 11 },
         ],
         forwards: [
             { name: 'Вадим', surname: 'Шикула', number: 12 },
-            { name: 'Геннадий', surname: 'Полюхович', number: 9 },
-            { name: 'Даниил', surname: 'Лемешевский', number: 10 },
+            { name: 'Геннадий', surname: 'Полюхович', number: 9, goals: 7 },
+            { name: 'Даниил', surname: 'Лемешевский', number: 10, goals: 11 },
             { name: 'Виктор', surname: 'Ибраев', number: 13 },
+            { name: 'Дмитрий', surname: 'Киселев', number: 14, goals: 4 },
         ]
     },
     [TEAMS_ROUTES.PINSKDREW]: {
@@ -71,14 +73,14 @@ export const TEAMS_DATA: Record<string, TeamData> = {
             { name: 'Николай', surname: 'Дрозд', number: 15 },
         ],
         midfielders: [
-            { name: 'Дмитрий', surname: 'Прокопович', number: 6 },
-            { name: 'Александр', surname: 'Кохнович', number: 7 },
+            { name: 'Дмитрий', surname: 'Каменец', number: 6, goals: 4 },
+            { name: 'Александр', surname: 'Кохнович', number: 9 },
             { name: 'Михаил', surname: 'Павловец', number: 8 },
-            { name: 'Артур', surname: 'Лешкевич', number: 10 },
+            { name: 'Иван', surname: 'Антоник', number: 10, goals: 5 },
         ],
         forwards: [
-            { name: 'Вячеслав', surname: 'Зырко', number: 9 },
-            { name: 'Максим', surname: 'Лозицкий', number: 11 },
+            { name: 'Вячеслав', surname: 'Зырко', number: 7, goals: 9 },
+            { name: 'Николай', surname: 'Бойба', number: 11, goals: 8 },
             { name: 'Кирилл', surname: 'Гришко', number: 17 },
             { name: 'Павел', surname: 'Якубович', number: 21 },
         ]
@@ -102,13 +104,13 @@ export const TEAMS_DATA: Record<string, TeamData> = {
         ],
         midfielders: [
             { name: 'Роман', surname: 'Шевченко', number: 6 },
-            { name: 'Илья', surname: 'Бондарь', number: 8 },
+            { name: 'Илья', surname: 'Сущинский', number: 8, goals: 6 },
             { name: 'Никита', surname: 'Мороз', number: 10 },
             { name: 'Антон', surname: 'Клименко', number: 22 },
         ],
         forwards: [
-            { name: 'Владислав', surname: 'Павлов', number: 7 },
-            { name: 'Кирилл', surname: 'Марченко', number: 9 },
+            { name: 'Виктор', surname: 'Трепачко', number: 7, goals: 7 },
+            { name: 'Гулзархан', surname: 'Одилбеков', number: 9, goals: 4 },
             { name: 'Ярослав', surname: 'Савченко', number: 11 },
             { name: 'Даниил', surname: 'Коваль', number: 99 },
         ]
@@ -131,14 +133,14 @@ export const TEAMS_DATA: Record<string, TeamData> = {
             { name: 'Станислав', surname: 'Шпаковский', number: 18 },
         ],
         midfielders: [
-            { name: 'Константин', surname: 'Малышко', number: 8 },
-            { name: 'Анатолий', surname: 'Паскевич', number: 14 },
-            { name: 'Виталий', surname: 'Сакович', number: 16 },
+            { name: '...', surname: 'Павелко', number: 8, goals: 10 },
+            { name: 'Валерий', surname: 'Баран', number: 14, goals: 9 },
+            { name: 'Константин', surname: 'Кончаленко', number: 16, goals: 4 },
             { name: 'Георгий', surname: 'Барановский', number: 20 },
         ],
         forwards: [
-            { name: 'Филипп', surname: 'Михневич', number: 9 },
-            { name: 'Эдуард', surname: 'Жуковский', number: 10 },
+            { name: 'Павел', surname: 'Мовчун', number: 9, goals: 17 },
+            { name: '...', surname: 'Свирид', number: 10, goals: 13 },
             { name: 'Руслан', surname: 'Левкович', number: 11 },
             { name: 'Юрий', surname: 'Борисевич', number: 77 },
         ]
@@ -167,8 +169,8 @@ export const TEAMS_DATA: Record<string, TeamData> = {
             { name: 'Артем', surname: 'Соколов', number: 10 }
         ],
         forwards: [
-            { name: 'Никита', surname: 'Кузнецов', number: 9 },
-            { name: 'Михаил', surname: 'Попов', number: 11 },
+            { name: 'Владислав', surname: 'Ляшкевич', number: 9, goals: 4 },
+            { name: 'Даниил', surname: 'Шиг', number: 11, goals: 4 },
             { name: 'Илья', surname: 'Васильев', number: 22 },
             { name: 'Данила', surname: 'Федоров', number: 77 }
         ]
@@ -197,14 +199,14 @@ export const TEAMS_DATA: Record<string, TeamData> = {
             { name: 'Тимофей', surname: 'Борисов', number: 21 }
         ],
         forwards: [
-            { name: 'Матвей', surname: 'Киселев', number: 11 },
-            { name: 'Роман', surname: 'Сорокин', number: 19 },
-            { name: 'Иван', surname: 'Фролов', number: 25 },
+            { name: '...', surname: 'Ляшук', number: 11, goals: 4 },
+            { name: '...', surname: 'Пивень', number: 19, goals: 4 },
+            { name: '...', surname: 'Самуйлик', number: 25, goals: 4 },
             { name: 'Глеб', surname: 'Кудрявцев', number: 99 }
         ]
     },
     [TEAMS_ROUTES.VITYAZ]: {
-        title: 'Витязь',
+        title: 'Spirits&Витязь',
         id: 7,
         games: 14,
         wins: 4,
@@ -221,13 +223,13 @@ export const TEAMS_DATA: Record<string, TeamData> = {
             { name: 'Ростислав', surname: 'Тарасов', number: 71 }
         ],
         midfielders: [
-            { name: 'Владимир', surname: 'Белов', number: 8 },
+            { name: 'Олег', surname: 'Вакульчик', number: 8, goals: 5 },
             { name: 'Станислав', surname: 'Рыбаков', number: 13 },
             { name: 'Ян', surname: 'Куликов', number: 14 },
             { name: 'Дамир', surname: 'Жуков', number: 88 }
         ],
         forwards: [
-            { name: 'Артур', surname: 'Тимофеев', number: 7 },
+            { name: '...', surname: 'Воронин', number: 7, goals: 6 },
             { name: 'Тимур', surname: 'Афанасьев', number: 9 },
             { name: 'Филипп', surname: 'Дмитриев', number: 10 },
             { name: 'Руслан', surname: 'Тихонов', number: 91 }
@@ -264,3 +266,4 @@ export const TEAMS_DATA: Record<string, TeamData> = {
         ]
     }
 };
+

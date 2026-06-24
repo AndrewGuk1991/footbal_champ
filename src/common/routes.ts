@@ -3,7 +3,8 @@ export const APP_ROUTES = {
     TEAMS: '/teams',
     TABLE: '/table',
     SCHEDULE: '/schedule',
-    NOTFOUND: '/notfound'
+    NOTFOUND: '/notfound',
+    STRIKERS: '/strikers'
 } as const
 
 

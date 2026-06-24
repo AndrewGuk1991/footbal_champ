@@ -9,10 +9,11 @@ export const SideBar = () => {
         { text: 'Расписание игр', path: APP_ROUTES.SCHEDULE },
         { text: 'Команды', path: APP_ROUTES.TEAMS },
         { text: 'Таблица', path: APP_ROUTES.TABLE },
+        { text: 'Бомбардиры', path: APP_ROUTES.STRIKERS },
     ];
 
     return (
-        <Box sx={{ textAlign: 'center'}}>
+        <Box>
             <List>
                 {menuItems.map((item) => (
                     <ListItem
@@ -22,7 +23,7 @@ export const SideBar = () => {
                             component={NavLink}
                             to={item.path}
                             sx={{
-                                textAlign: 'center',
+                                textAlign: 'left',
                                 '&.active': {
                                     backgroundColor: (theme) => theme.palette.action.selected,
                                     color: (theme) => theme.palette.primary.main,

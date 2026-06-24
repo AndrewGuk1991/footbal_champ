@@ -15,7 +15,7 @@ export const TeamCard = () => {
     }
 
     return (
-        <Box sx={{ mb: 4, p: 2, border: '1px solid #e0e0e0', borderRadius: 2 }}>
+        <Box sx={{ mb: 4, p: 2, border: '1px solid #e0e0e0', borderRadius: 2, maxWidth: '50%', margin: '20px auto' }}>
 
             <Typography variant="h5" component="h2" gutterBottom sx={{ fontWeight: 'bold' }}>
                 Состав команды {currentTeam.title}:

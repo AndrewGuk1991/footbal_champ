@@ -5,6 +5,7 @@ import {Navigate, Route, Routes} from "react-router-dom";
 import {GameSchedule} from "./GameSchedule.tsx";
 import {NotFound} from "./NotFound.tsx";
 import {APP_ROUTES} from "../common/routes.ts";
+import {Strikers} from "./Strikers.tsx";
 
 export const Main = () => {
     return (
@@ -22,8 +23,8 @@ export const Main = () => {
                     <Route path={`${APP_ROUTES.TEAMS}/*`} element={<Teams/>}/>
                     <Route path={APP_ROUTES.TABLE} element={<LeagueTable/>}/>
                     <Route path={APP_ROUTES.SCHEDULE} element={<GameSchedule/>}/>
-                    <Route path={APP_ROUTES.NOTFOUND} element={<NotFound/>}/>
-                    <Route path="*" element={<Navigate to={APP_ROUTES.NOTFOUND}/>} />
+                    <Route path={APP_ROUTES.STRIKERS} element={<Strikers/>}/>
+                    <Route path="*" element={<NotFound/>}/>
                 </Routes>
             </Container>
         </Box>

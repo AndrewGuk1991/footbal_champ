@@ -16,7 +16,6 @@ export const LeagueTable = () => {
 
     const sortedTeams = Object.values(TEAMS_DATA)
         .sort((a, b) => {
-            // Сначала сортируем по очкам (по убыванию)
             if (b.points !== a.points) {
                 return b.points - a.points;
             }
@@ -25,8 +24,10 @@ export const LeagueTable = () => {
             const diffA = parseInt(a.goalsDifference, 10) || 0;
             const diffB = parseInt(b.goalsDifference, 10) || 0;
 
+            debugger
             return diffB - diffA;
         });
+    debugger
 
     return (
         <TableContainer component={Paper} sx={{ maxWidth: 800, margin: '20px auto' }}>
