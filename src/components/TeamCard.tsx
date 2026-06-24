@@ -15,26 +15,35 @@ export const TeamCard = () => {
     }
 
     return (
-        <Box sx={{ mb: 4, p: 2, border: '1px solid #e0e0e0', borderRadius: 2, maxWidth: '50%', margin: '20px auto' }}>
+        <Box sx={{ mb: 4, p: 2, border: '1px solid #e0e0e0', borderRadius: 2, maxWidth: '70%', margin: '20px auto' }}>
 
             <Typography variant="h5" component="h2" gutterBottom sx={{ fontWeight: 'bold' }}>
                 Состав команды {currentTeam.title}:
             </Typography>
+            <Box sx={{display: 'flex', justifyContent: 'space-between'}}>
+                <Box sx={{width: '30%'}}>
+                    <Typography variant="subtitle1" color="text.secondary" sx={{ mt: 2, fontWeight: 'medium' }}>
+                        Защитники:
+                    </Typography>
+                    <GetPlayers players={currentTeam.defenders} />
+                </Box>
 
-            <Typography variant="subtitle1" color="text.secondary" sx={{ mt: 2, fontWeight: 'medium' }}>
-                Защитники:
-            </Typography>
-            <GetPlayers players={currentTeam.defenders} />
+                <Box sx={{width: '30%'}}>
+                    <Typography variant="subtitle1" color="text.secondary" sx={{ mt: 2, fontWeight: 'medium' }}>
+                        Полузащитники:
+                    </Typography>
+                    <GetPlayers players={currentTeam.midfielders} />
+                </Box>
 
-            <Typography variant="subtitle1" color="text.secondary" sx={{ mt: 2, fontWeight: 'medium' }}>
-                Полузащитники:
-            </Typography>
-            <GetPlayers players={currentTeam.midfielders} />
+                <Box sx={{width: '30%'}}>
+                    <Typography variant="subtitle1" color="text.secondary" sx={{ mt: 2, fontWeight: 'medium' }}>
+                        Нападающие:
+                    </Typography>
+                    <GetPlayers players={currentTeam.forwards} />
+                </Box>
 
-            <Typography variant="subtitle1" color="text.secondary" sx={{ mt: 2, fontWeight: 'medium' }}>
-                Нападающие:
-            </Typography>
-            <GetPlayers players={currentTeam.forwards} />
+            </Box>
+
         </Box>
     )
 }
