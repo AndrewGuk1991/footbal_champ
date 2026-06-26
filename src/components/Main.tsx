@@ -6,6 +6,7 @@ import {GameSchedule} from "./GameSchedule.tsx";
 import {NotFound} from "./NotFound.tsx";
 import {APP_ROUTES} from "../common/routes.ts";
 import {Strikers} from "./Strikers.tsx";
+import {Results} from "./Results.tsx";
 
 export const Main = () => {
     return (
@@ -24,6 +25,7 @@ export const Main = () => {
                     <Route path={APP_ROUTES.TABLE} element={<LeagueTable/>}/>
                     <Route path={APP_ROUTES.SCHEDULE} element={<GameSchedule/>}/>
                     <Route path={APP_ROUTES.STRIKERS} element={<Strikers/>}/>
+                    <Route path={APP_ROUTES.RESULTS} element={<Results/>}/>
                     <Route path="*" element={<NotFound/>}/>
                 </Routes>
             </Container>

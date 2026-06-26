@@ -15,7 +15,6 @@ export const Layout = () => {
                 <Main/>
             </Box>
             <Footer/>
-
         </Box>
     );
 };

@@ -10,6 +10,7 @@ export const SideBar = () => {
         { text: 'Команды', path: APP_ROUTES.TEAMS },
         { text: 'Таблица', path: APP_ROUTES.TABLE },
         { text: 'Бомбардиры', path: APP_ROUTES.STRIKERS },
+        { text: 'Результаты матчей', path: APP_ROUTES.RESULTS },
     ];
 
     return (
