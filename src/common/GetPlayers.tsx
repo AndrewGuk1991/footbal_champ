@@ -1,7 +1,6 @@
-
-
 import { List, ListItem, ListItemText } from "@mui/material";
-import type {Player} from "./types.ts";
+import type {Player} from "../data/teamsData.ts";
+
 
 
 export const GetPlayers = ({ players }: {players: Player[];}) => {
