@@ -24,10 +24,8 @@ export const LeagueTable = () => {
             const diffA = parseInt(a.goalsDifference, 10) || 0;
             const diffB = parseInt(b.goalsDifference, 10) || 0;
 
-            debugger
             return diffB - diffA;
         });
-    debugger
 
     return (
         <TableContainer component={Paper} sx={{ maxWidth: 800, margin: '20px auto' }}>
