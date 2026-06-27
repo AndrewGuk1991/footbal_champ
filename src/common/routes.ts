@@ -20,17 +20,18 @@ export const TEAMS_ROUTES = {
     ARSENAL: 'arsenal',
 } as const
 
-export type MatchWeekId = `mw${number}`;
+export type MatchDayId = `md${number}`;
 
+export const TOTAL_MATCH_DAYS = 14;
 
-export const WEEKS_COUNT = 14;
-export const MATCH_WEEKS_IDS = Array.from(
-    { length: WEEKS_COUNT },
-    (_, i) => `mw${i + 1}` as MatchWeekId
+// Массив ['md1', 'md2', ..., 'md14'] для построения навигации в UI
+export const MATCH_DAYS_IDS = Array.from(
+    { length: TOTAL_MATCH_DAYS },
+    (_, i) => `md${i + 1}` as MatchDayId
 );
 
-// Результат: { mw1: 'match-week-1', mw2: 'match-week-2', ... }
-export const MW_ROUTES = MATCH_WEEKS_IDS.reduce((acc, id, index) => {
-    acc[id] = `match-week-${index + 1}`;
+// Сгенерированный объект роутов: { md1: 'match-day-1', md2: 'match-day-2', ... }
+export const MD_ROUTES = MATCH_DAYS_IDS.reduce((acc, id, index) => {
+    acc[id] = `match-day-${index + 1}`;
     return acc;
-}, {} as Record<MatchWeekId, string>);
+}, {} as Record<MatchDayId, string>);
