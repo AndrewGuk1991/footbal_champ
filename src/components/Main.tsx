@@ -14,7 +14,6 @@ export const Main = () => {
             component="main"
             sx={{
                 flexGrow: 1,
-                p: 3,
                 backgroundColor: (theme) => theme.palette.background.default,
             }}
         >
