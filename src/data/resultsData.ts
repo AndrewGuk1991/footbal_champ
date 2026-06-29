@@ -1,5 +1,3 @@
-import {type MatchDayId} from "../common/routes.ts";
-
 export type GameEventType = 'goal' | 'yellow_card' | 'red_card'
 
 export type GameEvent = {
@@ -31,57 +29,68 @@ export type MatchDay = {
     games: Game[]
 }
 
-export type ResultsDataType = Record<MatchDayId, MatchDay>;
+export type ResultsDataType = {
+    [key: string]: MatchDay;
+};
 
 export const RESULTS_DATA: ResultsDataType = {
-    md1: {
+    "match-day-1": {
         name: "1 тур",
         date: "21.08.2025",
         games: [
-            // {
-            //     nameHosts: "Пикант",
-            //     nameGuests: "Арсенал",
-            //     goalsHosts: 17,
-            //     goalsGuests: 2,
-            //     referee: 'Гончаренко Александр',
-            //     dateMatch: "21.08.2025",
-            //     timeMatch: "19:00",
-            //     events: [
-            //         {
-            //             id: "ev1",
-            //             minute: 14,
-            //             period: 1, // 1-й тайм
-            //             type: "goal",
-            //             playerName: "Букайо Сака",
-            //             team: "hosts",
-            //         },
-            //         {
-            //             id: "ev2",
-            //             minute: 42,
-            //             period: 1, // 1-й тайм
-            //             type: "yellow_card",
-            //             playerName: "Энцо Фернандес",
-            //             team: "guests"
-            //         },
-            //         {
-            //             id: "ev3",
-            //             minute: 47, // Например, 45+2 минута
-            //             period: 1,  // Все еще 1-й тайм (компенсированное время)
-            //             type: "goal",
-            //             playerName: "Габриэл Жезус",
-            //             team: "hosts"
-            //         },
-            //         {
-            //             id: "ev5",
-            //             minute: 88,
-            //             period: 2, // 2-й тайм
-            //             type: "goal",
-            //             playerName: "Коул Палмер",
-            //             team: "guests",
-            //             isPenalty: true
-            //         }
-            //     ]
-            // },
+            {
+                nameHosts: "Пикант",
+                nameGuests: "Арсенал",
+                goalsHosts: 4,
+                goalsGuests: 1,
+                referee: 'Гончаренко Александр',
+                dateMatch: "21.08.2025",
+                timeMatch: "19:00",
+                events: [
+                    {
+                        id: "ev1",
+                        minute: 5,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Баран Валерий",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev2",
+                        minute: 7,
+                        period: 1, // 1-й тайм
+                        type: "goal",
+                        playerName: "Мовчун Павел",
+                        team: "hosts"
+                    },
+                    {
+                        id: "ev3",
+                        minute: 10, // Например, 45+2 минута
+                        period: 1,  // Все еще 1-й тайм (компенсированное время)
+                        type: "goal",
+                        playerName: "Свирид",
+                        team: "hosts"
+                    },
+                    {
+                        id: "ev4",
+                        minute: 18,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Карпов Константин",
+                        team: "guests",
+                        isPenalty: true
+                    },
+                    {
+                        id: "ev5",
+                        minute: 25,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Мовчун Павел",
+                        team: "hosts",
+                        isPenalty: true
+                    }
+                ]
+            },
             {
                 nameHosts: "Пинскдрев",
                 nameGuests: "Аякс",
@@ -113,6 +122,82 @@ export const RESULTS_DATA: ResultsDataType = {
                         period: 2,
                         type: "goal",
                         playerName: "Полюхович Геннадий",
+                        team: "hosts"
+                    },
+                ]
+            }
+        ]
+    },
+    "match-day-2": {
+        name: "2 тур",
+        date: "26.08.2025",
+        games: [
+            {
+                nameHosts: "Пикант",
+                nameGuests: "Аякс",
+                goalsHosts: 1,
+                goalsGuests: 0,
+                referee: 'Гончаренко Александр',
+                dateMatch: "26.08.2025",
+                timeMatch: "19:00",
+                events: [
+                    {
+                        id: "ev1",
+                        minute: 30,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Баран Валерий",
+                        team: "hosts",
+                    },
+                ]
+            },
+            {
+                nameHosts: "Динамо",
+                nameGuests: "Спутник",
+                goalsHosts: 3,
+                goalsGuests: 2,
+                dateMatch: "26.08.2025",
+                timeMatch: "19:00",
+                referee: 'Домантович Александр',
+                events: [
+                    {
+                        id: "ev1",
+                        minute: 5,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Козел Виталий",
+                        team: "hosts"
+                    },
+                    {
+                        id: "ev2",
+                        minute: 10,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Сущинский Илья",
+                        team: "guests"
+                    },
+                    {
+                        id: "ev3",
+                        minute: 15,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Козел Владимир",
+                        team: "hosts"
+                    },
+                    {
+                        id: "ev4",
+                        minute: 22,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Курьянович Денис",
+                        team: "guests"
+                    },
+                    {
+                        id: "ev5",
+                        minute: 35,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Козел Владимир",
                         team: "hosts"
                     },
                 ]
