@@ -1,4 +1,3 @@
-import {TEAMS_ROUTES} from "../common/routes.ts";
 
 export type Player = {
     name: string;
@@ -24,7 +23,7 @@ export type TeamData = {
 }
 
 export const TEAMS_DATA: Record<string, TeamData> = {
-    [TEAMS_ROUTES.AJAX]: {
+    'ajax': {
         title: 'Аякс',
         id: 1,
         games: 14,
@@ -55,7 +54,7 @@ export const TEAMS_DATA: Record<string, TeamData> = {
             { name: 'Дмитрий', surname: 'Киселев', number: 14, goals: 4 },
         ]
     },
-    [TEAMS_ROUTES.PINSKDREW]: {
+    'pinskdrew': {
         title: 'Пинскдрев',
         id: 2,
         games: 14,
@@ -85,7 +84,7 @@ export const TEAMS_DATA: Record<string, TeamData> = {
             { name: 'Павел', surname: 'Якубович', number: 21 },
         ]
     },
-    [TEAMS_ROUTES.SPUTNIK]: {
+    'sputnik': {
         title: 'Спутник',
         id: 3,
         games: 14,
@@ -115,7 +114,7 @@ export const TEAMS_DATA: Record<string, TeamData> = {
             { name: 'Даниил', surname: 'Коваль', number: 99 },
         ]
     },
-    [TEAMS_ROUTES.PIKANT]: {
+    'pikant': {
         title: 'Пикант',
         id: 4,
         games: 14,
@@ -145,7 +144,7 @@ export const TEAMS_DATA: Record<string, TeamData> = {
             { name: 'Юрий', surname: 'Борисевич', number: 77 },
         ]
     },
-    [TEAMS_ROUTES.DINAMO]: {
+    'dinamo': {
         title: 'Динамо',
         id: 5,
         games: 14,
@@ -175,7 +174,7 @@ export const TEAMS_DATA: Record<string, TeamData> = {
             { name: 'Данила', surname: 'Федоров', number: 77 }
         ]
     },
-    [TEAMS_ROUTES.ODYSSEY]: {
+    'odyssey': {
         title: 'Одиссей',
         id: 6,
         games: 14,
@@ -205,7 +204,7 @@ export const TEAMS_DATA: Record<string, TeamData> = {
             { name: 'Глеб', surname: 'Кудрявцев', number: 99 }
         ]
     },
-    [TEAMS_ROUTES.VITYAZ]: {
+    'vityaz': {
         title: 'Spirits&Витязь',
         id: 7,
         games: 14,
@@ -235,7 +234,7 @@ export const TEAMS_DATA: Record<string, TeamData> = {
             { name: 'Руслан', surname: 'Тихонов', number: 91 }
         ]
     },
-    [TEAMS_ROUTES.ARSENAL]: {
+    'arsenal': {
         title: 'Арсенал',
         id: 8,
         games: 14,
