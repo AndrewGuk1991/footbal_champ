@@ -1,5 +1,4 @@
-import {Box, Typography} from "@mui/material";
-
+import { Box, Typography } from "@mui/material";
 
 export const Footer = () => {
     return (
@@ -8,15 +7,20 @@ export const Footer = () => {
             sx={{
                 py: 3,
                 px: 2,
-                mt: 'auto', // Прижимает футер к самому низу страницы
-                backgroundColor: (theme) => theme.palette.grey[200],
+                mt: 'auto',
+                backgroundColor: (theme) => theme.palette.background.paper,
+                borderTop: '1px solid',
+                borderColor: (theme) => theme.palette.divider,
                 textAlign: 'center',
                 zIndex: (theme) => theme.zIndex.drawer + 1
             }}
         >
-            <Typography variant="body2" color="textSecondary">
+            <Typography
+                variant="body2"
+                sx={{ color: (theme) => theme.palette.text.primary }}
+            >
                 © {new Date().getFullYear()} Моё Приложение. Все права защищены.
             </Typography>
         </Box>
-    )
-}
+    );
+};

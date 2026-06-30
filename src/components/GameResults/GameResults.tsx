@@ -6,7 +6,7 @@ import { MatchRow } from "./MatchRow.tsx";
 export const GameResults = () => {
     return (
         <Box sx={{ width: '100%', maxWidth: 600, margin: '0 auto', padding: 2 }}>
-            <Typography variant="h4" sx={{ mb: 2 }}>Результаты матчей:</Typography>
+            <Typography variant="h4" sx={{ mb: 2 }}>Расписание игр и результаты</Typography>
             {Object.entries(RESULTS_DATA).map(([matchDayId, matchDay]) => (
                 <Accordion
                     key={matchDayId}
