@@ -8,6 +8,7 @@ import {Strikers} from "./Strikers.tsx";
 import {GameResults} from "./GameResults/GameResults.tsx";
 import {MatchDetails} from "./GameResults/MatchDetails.tsx";
 import {TeamCard} from "./TeamCard.tsx";
+import {PlayerProfile} from "./PlayerProfile.tsx";
 
 export const Main = () => {
     return (
@@ -27,6 +28,8 @@ export const Main = () => {
                     <Route path={APP_ROUTES.GAME_RESULTS} element={<GameResults />}/>
 
                     <Route path={`${APP_ROUTES.TEAMS}/:teamRoute`} element={<TeamCard />} />
+                    <Route path={`${APP_ROUTES.TEAMS}/:teamRoute/player/:number`} element={<PlayerProfile/>} />
+
                     <Route path={`${APP_ROUTES.GAME_RESULTS}/:matchDayId/:gameIndex`} element={<MatchDetails />} />
 
                     <Route path="*" element={<NotFound/>}/>
