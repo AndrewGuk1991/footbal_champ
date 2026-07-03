@@ -4,6 +4,7 @@ export type Player = {
     surname: string;
     number: number;
     goals?: number;
+    games?: number;
 }
 
 export type TeamData = {
@@ -35,23 +36,23 @@ export const TEAMS_DATA: Record<string, TeamData> = {
         goalsDifference: '+26',
         points: 24,
         defenders: [
-            { name: 'Виталий', surname: 'Головчик', number: 2 },
-            { name: 'Роман', surname: 'Ковалицкий', number: 3 },
-            { name: 'Кирилл', surname: 'Карпенко', number: 4 },
-            { name: 'Виталий', surname: 'Кот', number: 5 },
+            { name: 'Виталий', surname: 'Головчик', number: 2, games: 14 },
+            { name: 'Роман', surname: 'Ковалицкий', number: 3, games: 14 },
+            { name: 'Кирилл', surname: 'Карпенко', number: 4, games: 14 },
+            { name: 'Виталий', surname: 'Кот', number: 5, games: 14 },
         ],
         midfielders: [
-            { name: 'Марк', surname: 'Кот', number: 6 },
-            { name: 'Владимир', surname: 'Сидоревич', number: 7, goals: 4 },
-            { name: 'Андрей', surname: 'Гук', number: 8 },
-            { name: 'Евгенний', surname: 'Радионов', number: 11 },
+            { name: 'Марк', surname: 'Кот', number: 6, games: 14 },
+            { name: 'Владимир', surname: 'Сидоревич', number: 7, goals: 4, games: 14 },
+            { name: 'Андрей', surname: 'Гук', number: 8, games: 14 },
+            { name: 'Евгенний', surname: 'Радионов', number: 11, games: 14 },
         ],
         forwards: [
-            { name: 'Вадим', surname: 'Шикула', number: 12 },
-            { name: 'Геннадий', surname: 'Полюхович', number: 9, goals: 7 },
-            { name: 'Даниил', surname: 'Лемешевский', number: 10, goals: 11 },
-            { name: 'Виктор', surname: 'Ибраев', number: 13 },
-            { name: 'Дмитрий', surname: 'Киселев', number: 14, goals: 4 },
+            { name: 'Вадим', surname: 'Шикула', number: 12, games: 14 },
+            { name: 'Геннадий', surname: 'Полюхович', number: 9, goals: 7, games: 14 },
+            { name: 'Даниил', surname: 'Лемешевский', number: 10, goals: 11, games: 14 },
+            { name: 'Виктор', surname: 'Ибраев', number: 13, games: 14 },
+            { name: 'Дмитрий', surname: 'Киселев', number: 14, goals: 4, games: 14 },
         ]
     },
     'pinskdrew': {
@@ -66,22 +67,22 @@ export const TEAMS_DATA: Record<string, TeamData> = {
         goalsDifference: '+30',
         points: 30,
         defenders: [
-            { name: 'Иван', surname: 'Шелест', number: 2 },
-            { name: 'Сергей', surname: 'Борисевич', number: 3 },
-            { name: 'Олег', surname: 'Король', number: 4 },
-            { name: 'Николай', surname: 'Дрозд', number: 15 },
+            { name: 'Иван', surname: 'Шелест', number: 2, games: 14 },
+            { name: 'Сергей', surname: 'Борисевич', number: 3, games: 14 },
+            { name: 'Олег', surname: 'Король', number: 4, games: 14 },
+            { name: 'Николай', surname: 'Дрозд', number: 15, games: 14 },
         ],
         midfielders: [
-            { name: 'Дмитрий', surname: 'Каменец', number: 6, goals: 4 },
-            { name: 'Александр', surname: 'Кохнович', number: 9 },
-            { name: 'Михаил', surname: 'Павловец', number: 8 },
-            { name: 'Иван', surname: 'Антоник', number: 10, goals: 5 },
+            { name: 'Дмитрий', surname: 'Каменец', number: 6, goals: 4, games: 14 },
+            { name: 'Александр', surname: 'Кохнович', number: 9, games: 14 },
+            { name: 'Михаил', surname: 'Павловец', number: 8, games: 14 },
+            { name: 'Иван', surname: 'Антоник', number: 10, goals: 5, games: 14 },
         ],
         forwards: [
-            { name: 'Вячеслав', surname: 'Зырко', number: 7, goals: 9 },
-            { name: 'Николай', surname: 'Бойба', number: 11, goals: 8 },
-            { name: 'Кирилл', surname: 'Гришко', number: 17 },
-            { name: 'Павел', surname: 'Якубович', number: 21 },
+            { name: 'Вячеслав', surname: 'Зырко', number: 7, goals: 9, games: 14 },
+            { name: 'Николай', surname: 'Бойба', number: 11, goals: 8, games: 14 },
+            { name: 'Кирилл', surname: 'Гришко', number: 17, games: 14 },
+            { name: 'Павел', surname: 'Якубович', number: 21, games: 14 },
         ]
     },
     'sputnik': {
