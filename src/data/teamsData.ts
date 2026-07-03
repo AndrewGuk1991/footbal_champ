@@ -5,6 +5,7 @@ export type Player = {
     number: number;
     goals?: number;
     games?: number;
+    photo?: string;
 }
 
 export type TeamData = {
@@ -22,6 +23,7 @@ export type TeamData = {
     midfielders: Player[];
     forwards: Player[];
 }
+
 
 export const TEAMS_DATA: Record<string, TeamData> = {
     'ajax': {
