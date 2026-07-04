@@ -1,13 +1,15 @@
 import {Box, Button, Divider, Paper, Stack, Typography} from "@mui/material";
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-import SportsFootballIcon from '@mui/icons-material/SportsFootball';
+import SportsSoccerIcon from '@mui/icons-material/SportsSoccer'; // ИСПРАВЛЕНО: Импортируем европейский футбольный мяч
 import NumbersIcon from '@mui/icons-material/Numbers';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import ShieldIcon from '@mui/icons-material/Shield';
 import {Navigate, useNavigate, useParams} from "react-router-dom";
 import {TEAMS_DATA} from "../data/teamsData.ts";
 import {APP_ROUTES} from "../common/routes.ts";
-import {DefaultAvatarSVG} from "../common/DefaultAvatarSVG.tsx";
+
+// Импортируем дефолтную картинку из папки assets
+import defaultAvatar from "./../assets/default-avatar-profile-icon.png";
 
 export const PlayerProfile = () => {
     const { teamRoute, number } = useParams<{ teamRoute: string; number: string }>();
@@ -73,13 +75,13 @@ export const PlayerProfile = () => {
                     alignItems: { xs: 'center', sm: 'flex-start' }
                 }}
             >
-                {/* Левый блок: Аватар или SVG заглушка */}
+                {/* Левый блок: Аватар или заглушка */}
                 <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', shrink: 0 }}>
                     <Box
                         sx={{
                             width: { xs: 160, sm: 200 },
                             height: { xs: 160, sm: 200 },
-                            borderRadius: 2, // 8px по вашей теме
+                            borderRadius: 2,
                             overflow: 'hidden',
                             border: '1px solid',
                             borderColor: (theme) => theme.palette.divider,
@@ -87,22 +89,18 @@ export const PlayerProfile = () => {
                             boxShadow: 3
                         }}
                     >
-                        {player.photo ? (
-                            <Box
-                                component="img"
-                                src={player.photo}
-                                alt={`${player.name} ${player.surname}`}
-                                sx={{ width: '100%', height: '100%', objectFit: 'cover' }}
-                            />
-                        ) : (
-                            /* Рендерим кастомную заглушку с номером на спине */
-                            <DefaultAvatarSVG number={player.number} />
-                        )}
+                        <Box
+                            component="img"
+                            src={player.photo ? player.photo : defaultAvatar}
+                            alt={`${player.name} ${player.surname}`}
+                            sx={{
+                                width: '100%',
+                                height: '100%',
+                                objectFit: 'cover'
+                            }}
+                        />
                     </Box>
-
-                    {/* Маленький аккуратный номер под фото больше не нужен, так как он теперь крупно на спине! */}
                 </Box>
-
 
                 {/* Правая колонка: Информация об игроке */}
                 <Box sx={{ flexGrow: 1, width: '100%' }}>
@@ -155,7 +153,8 @@ export const PlayerProfile = () => {
                         </Box>
 
                         <Box sx={{ display: 'flex', alignItems: 'center', gap: 1.5 }}>
-                            <SportsFootballIcon color="action" />
+                            {/* ИСПРАВЛЕНО: Заменено на классический футбольный мяч */}
+                            <SportsSoccerIcon color="action" />
                             <Typography variant="body1">
                                 <strong>Забитые голы:</strong> {player.goals || 0}
                             </Typography>
