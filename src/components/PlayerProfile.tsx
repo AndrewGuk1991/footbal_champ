@@ -20,10 +20,12 @@ export const PlayerProfile = () => {
     }
 
     const allPlayers = [
+        ...(currentTeam.goalkeepers || []).map(p => ({ ...p, role: 'Вратарь' })), // ДОБАВЛЕНО: сборка вратарей
         ...currentTeam.defenders.map(p => ({ ...p, role: 'Защитник' })),
         ...currentTeam.midfielders.map(p => ({ ...p, role: 'Полузащитник' })),
         ...currentTeam.forwards.map(p => ({ ...p, role: 'Нападающий' }))
     ];
+
 
     const player = allPlayers.find(p => p.number === Number(number));
 

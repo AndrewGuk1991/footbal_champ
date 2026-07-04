@@ -21,6 +21,7 @@ export type TeamData = {
     goalsAgainst: number;
     goalsDifference: string;
     points: number;
+    goalkeepers: Player[];
     defenders: Player[];
     midfielders: Player[];
     forwards: Player[];
@@ -39,6 +40,10 @@ export const TEAMS_DATA: Record<string, TeamData> = {
         goalsAgainst: 15,
         goalsDifference: '+26',
         points: 24,
+        goalkeepers: [
+            { name: 'Денис', surname: 'Мелюх', number: 1, games: 7, redCards: 1 },
+            { name: 'Сергей', surname: 'Абрамчук', number: 98, games: 7 },
+        ],
         defenders: [
             { name: 'Виталий', surname: 'Головчик', number: 2, games: 14 },
             { name: 'Роман', surname: 'Ковалицкий', number: 3, games: 14 },
@@ -70,6 +75,7 @@ export const TEAMS_DATA: Record<string, TeamData> = {
         goalsAgainst: 14,
         goalsDifference: '+30',
         points: 30,
+        goalkeepers: [],
         defenders: [
             { name: 'Иван', surname: 'Шелест', number: 2, games: 14 },
             { name: 'Сергей', surname: 'Борисевич', number: 3, games: 14 },
@@ -100,6 +106,7 @@ export const TEAMS_DATA: Record<string, TeamData> = {
         goalsAgainst: 22,
         goalsDifference: '+13',
         points: 24,
+        goalkeepers: [],
         defenders: [
             { name: 'Василий', surname: 'Кравчук', number: 4 },
             { name: 'Артем', surname: 'Мельник', number: 5 },
@@ -130,6 +137,7 @@ export const TEAMS_DATA: Record<string, TeamData> = {
         goalsAgainst: 15,
         goalsDifference: '+52',
         points: 37,
+        goalkeepers: [],
         defenders: [
             { name: 'Геннадий', surname: 'Тарасевич', number: 3 },
             { name: 'Валерий', surname: 'Юшкевич', number: 5 },
@@ -160,6 +168,7 @@ export const TEAMS_DATA: Record<string, TeamData> = {
         goalsAgainst: 30,
         goalsDifference: '-1',
         points: 19,
+        goalkeepers: [],
         defenders: [
             { name: 'Александр', surname: 'Иванов', number: 2 },
             { name: 'Дмитрий', surname: 'Петров', number: 4 },
@@ -190,6 +199,7 @@ export const TEAMS_DATA: Record<string, TeamData> = {
         goalsAgainst: 41,
         goalsDifference: '-7',
         points: 13,
+        goalkeepers: [],
         defenders: [
             { name: 'Олег', surname: 'Павлов', number: 3 },
             { name: 'Антон', surname: 'Марков', number: 15 },
@@ -220,6 +230,7 @@ export const TEAMS_DATA: Record<string, TeamData> = {
         goalsAgainst: 43,
         goalsDifference: '-17',
         points: 13,
+        goalkeepers: [],
         defenders: [
             { name: 'Святослав', surname: 'Поляков', number: 2 },
             { name: 'Богдан', surname: 'Савельев', number: 44 },
@@ -250,6 +261,7 @@ export const TEAMS_DATA: Record<string, TeamData> = {
         goalsAgainst: 109,
         goalsDifference: '-96',
         points: 3,
+        goalkeepers: [],
         defenders: [
             { name: 'Константин', surname: 'Карпов', number: 3 },
             { name: 'Леонид', surname: 'Власов', number: 5 },

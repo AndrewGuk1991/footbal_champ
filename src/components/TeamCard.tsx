@@ -112,6 +112,8 @@ export const TeamCard = () => {
                     width: '100%'
                 }}
             >
+                {/* ДОБАВЛЕНО: Блок вратарей отображается первым в списке */}
+                {currentTeam.goalkeepers && renderPositionBlock("Вратари:", currentTeam.goalkeepers)}
                 {renderPositionBlock("Защитники:", currentTeam.defenders)}
                 {renderPositionBlock("Полузащитники:", currentTeam.midfielders)}
                 {renderPositionBlock("Нападающие:", currentTeam.forwards)}
