@@ -12,6 +12,7 @@ export type GameEvent = {
 };
 
 export type Game = {
+    id: string;
     nameHosts: string
     nameGuests: string
     goalsHosts: number
@@ -39,6 +40,7 @@ export const RESULTS_DATA: ResultsDataType = {
         date: "21.08.2025",
         games: [
             {
+                id: 'game-1',
                 nameHosts: "Пикант",
                 nameGuests: "Арсенал",
                 goalsHosts: 4,
@@ -92,6 +94,7 @@ export const RESULTS_DATA: ResultsDataType = {
                 ]
             },
             {
+                id: 'game-2',
                 nameHosts: "Пинскдрев",
                 nameGuests: "Аякс",
                 goalsHosts: 2,
@@ -133,6 +136,7 @@ export const RESULTS_DATA: ResultsDataType = {
         date: "26.08.2025",
         games: [
             {
+                id: 'game-1',
                 nameHosts: "Пикант",
                 nameGuests: "Аякс",
                 goalsHosts: 1,
@@ -152,6 +156,7 @@ export const RESULTS_DATA: ResultsDataType = {
                 ]
             },
             {
+                id: 'game-2',
                 nameHosts: "Динамо",
                 nameGuests: "Спутник",
                 goalsHosts: 3,
