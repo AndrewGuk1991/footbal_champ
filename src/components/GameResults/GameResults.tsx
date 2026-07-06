@@ -2,7 +2,7 @@ import { Box, Accordion, AccordionSummary, AccordionDetails, Typography } from '
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { RESULTS_DATA } from "../../data/resultsData.ts";
 import { MatchRow } from "./MatchRow.tsx";
-import { alpha } from "@mui/material/styles"; // Импортируем утилиту для прозрачности синего цвета
+import { alpha } from "@mui/material/styles";
 
 export const GameResults = () => {
     return (
@@ -30,9 +30,10 @@ export const GameResults = () => {
                 Расписание игр и результаты
             </Typography>
 
+            {/* Итерируемся по парам [key, MatchDay] из RESULTS_DATA */}
             {Object.entries(RESULTS_DATA).map(([matchDayId, matchDay]) => (
                 <Accordion
-                    key={matchDayId}
+                    key={matchDayId} // Используем строку "match-day-1", "match-day-2" как ключ для тура
                     disableGutters
                     // 3. Заменили жесткую тень на современный аутлайн в едином стиле проекта
                     variant="outlined"
@@ -46,7 +47,7 @@ export const GameResults = () => {
                         backgroundColor: (theme) => theme.palette.background.paper,
                         borderColor: (theme) => theme.palette.divider,
 
-                        // Элегантный синий контур вокруг всего аккордеона при фокусе или наведении (опционально)
+                        // Элегантный синий контур вокруг всего аккордеона при фокусе или наведении
                         '&:hover': {
                             borderColor: (theme) => alpha(theme.palette.primary.main, 0.2)
                         }
@@ -75,7 +76,7 @@ export const GameResults = () => {
                                     fontSize: { xs: '0.95rem', sm: '1rem' }
                                 }}
                             >
-                                {matchDay.name}
+                                {matchDay.name} {/* Выведет "1 тур" */}
                             </Typography>
                             <Typography
                                 variant="body2"
@@ -84,7 +85,7 @@ export const GameResults = () => {
                                     fontSize: { xs: '0.8rem', sm: '0.875rem' }
                                 }}
                             >
-                                {matchDay.date}
+                                {matchDay.date} {/* Выведет "21.08.2025" */}
                             </Typography>
                         </Box>
                     </AccordionSummary>
@@ -97,12 +98,13 @@ export const GameResults = () => {
                             flexDirection: 'column'
                         }}
                     >
-                        {matchDay.games.map((game, index) => (
+                        {/* Маппим массив игр из объекта matchDay */}
+                        {matchDay.games.map((game) => (
                             <MatchRow
-                                key={index}
-                                matchDayId={matchDayId}
-                                gameIndex={index}
+                                key={game.id}
+                                gameId={game.id}
                                 game={game}
+                                matchDayId={matchDayId}
                             />
                         ))}
                     </AccordionDetails>

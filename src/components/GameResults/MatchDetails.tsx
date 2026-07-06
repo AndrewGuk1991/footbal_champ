@@ -2,17 +2,18 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { Box, Typography, Button, Card, CardContent, Divider, List, ListItem, ListItemText, Chip } from '@mui/material';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import SportsSoccerIcon from '@mui/icons-material/SportsSoccer';
-import { RESULTS_DATA } from "../../data/resultsData.ts";
+import StyleIcon from '@mui/icons-material/Style';
+import { type GameEvent, RESULTS_DATA } from "../../data/resultsData.ts";
 
 export const MatchDetails = () => {
-    const { matchDayId, gameIndex } = useParams<{ matchDayId: string; gameIndex: string }>();
+    const { matchDayId, gameId } = useParams<{ matchDayId: string; gameId: string }>();
     const navigate = useNavigate();
 
     const matchDay = matchDayId && matchDayId in RESULTS_DATA
         ? RESULTS_DATA[matchDayId as keyof typeof RESULTS_DATA]
         : null;
 
-    const game = matchDay && gameIndex ? matchDay.games[parseInt(gameIndex, 10)] : null;
+    const game = matchDay && gameId ? matchDay.games.find(g => g.id === gameId) : null;
 
     if (!game) {
         return (
@@ -25,13 +26,22 @@ export const MatchDetails = () => {
         );
     }
 
-    const firstPeriodEvents = (game.events || [])
-        .filter(event => event.period === 1)
-        .sort((a, b) => a.minute - b.minute);
+    // Оптимизация: сортируем события один раз перед фильтрацией
+    const sortedEvents = [...(game.events || [])].sort((a, b) => a.minute - b.minute);
+    const firstPeriodEvents = sortedEvents.filter(event => event.period === 1);
+    const secondPeriodEvents = sortedEvents.filter(event => event.period === 2);
 
-    const secondPeriodEvents = (game.events || [])
-        .filter(event => event.period === 2)
-        .sort((a, b) => a.minute - b.minute);
+    const renderEventIcon = (eventType: GameEvent['type']) => {
+        switch (eventType) {
+            case 'yellow_card':
+                return <StyleIcon sx={{ fontSize: '1.1rem', color: '#ffeb3b', transform: 'rotate(90deg)' }} />;
+            case 'red_card':
+                return <StyleIcon sx={{ fontSize: '1.1rem', color: '#f44336', transform: 'rotate(90deg)' }} />;
+            case 'goal':
+            default:
+                return <SportsSoccerIcon sx={{ fontSize: '1.1rem', color: 'primary.main' }} />;
+        }
+    };
 
     const renderEventsList = (eventsList: typeof game.events) => (
         <List dense disablePadding>
@@ -48,14 +58,8 @@ export const MatchDetails = () => {
                             px: { xs: 1, sm: 2 }
                         }}
                     >
-                        {/* Иконка мяча красится в синий акцент */}
-                        <Box sx={{
-                            mx: 1.5,
-                            display: 'flex',
-                            alignItems: 'center',
-                            color: 'primary.main'
-                        }}>
-                            <SportsSoccerIcon sx={{ fontSize: '1.1rem' }} />
+                        <Box sx={{ mx: 1.5, display: 'flex', alignItems: 'center' }}>
+                            {renderEventIcon(event.type)}
                         </Box>
 
                         <ListItemText
@@ -65,7 +69,14 @@ export const MatchDetails = () => {
                                     <Box component="span" sx={{ color: 'primary.light', fontWeight: 'bold', mr: isHostEvent ? 0.5 : 0, ml: isHostEvent ? 0 : 0.5 }}>
                                         {event.minute}'
                                     </Box>{" "}
-                                    {event.playerName} {event.isPenalty && <Box component="span" sx={{ color: 'error.main', fontWeight: 'bold' }}>(П)</Box>}
+                                    {event.playerName}{" "}
+                                    {event.isPenalty && (
+                                        <Box component="span" sx={{ color: 'error.main', fontWeight: 'bold' }}>
+                                            (П)
+                                        </Box>
+                                    )}
+                                    {event.type === 'yellow_card' && <Box component="span" sx={{ color: 'text.secondary', fontSize: '0.75rem' }}> (ЖК)</Box>}
+                                    {event.type === 'red_card' && <Box component="span" sx={{ color: 'error.light', fontSize: '0.75rem' }}> (КК)</Box>}
                                 </Typography>
                             }
                         />
@@ -99,7 +110,6 @@ export const MatchDetails = () => {
                         {game.dateMatch} в {game.timeMatch} {game.referee && `| Судья: ${game.referee}`}
                     </Typography>
 
-                    {/* Адаптивное табло: на мобилках в колонку, на десктопе в ряд */}
                     <Box sx={{
                         display: 'flex',
                         flexDirection: { xs: 'column', sm: 'row' },
@@ -121,7 +131,7 @@ export const MatchDetails = () => {
                                 px: 2,
                                 height: 46,
                                 boxShadow: '0 4px 14px rgba(30, 136, 229, 0.4)',
-                                order: { xs: -1, sm: 0 } // Счет всегда сверху на мобильных устройствах
+                                order: { xs: -1, sm: 0 }
                             }}
                         />
 
@@ -147,7 +157,7 @@ export const MatchDetails = () => {
                                             fontWeight: 'bold',
                                             mb: 1.5,
                                             textAlign: 'center',
-                                            backgroundColor: 'rgba(255, 255, 255, 0.03)', // Адаптировано под темную тему
+                                            backgroundColor: 'rgba(255, 255, 255, 0.03)',
                                             color: 'primary.light',
                                             py: 0.75,
                                             borderRadius: 1,
@@ -170,7 +180,7 @@ export const MatchDetails = () => {
                                             fontWeight: 'bold',
                                             mb: 1.5,
                                             textAlign: 'center',
-                                            backgroundColor: 'rgba(255, 255, 255, 0.03)', // Адаптировано под темную тему
+                                            backgroundColor: 'rgba(255, 255, 255, 0.03)',
                                             color: 'primary.light',
                                             py: 0.75,
                                             borderRadius: 1,

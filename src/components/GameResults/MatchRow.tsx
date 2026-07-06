@@ -1,25 +1,22 @@
 import { Box, Typography, Chip } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import { APP_ROUTES } from "../../common/routes.ts";
-import { alpha } from "@mui/material/styles"; // Импортируем утилиту для прозрачности синего цвета
+import { alpha } from "@mui/material/styles";
+import type {Game} from "../../data/resultsData.ts";
+
 
 type MatchRowProps = {
-    matchDayId: string;
-    gameIndex: number;
-    game: {
-        nameHosts: string;
-        nameGuests: string;
-        goalsHosts: number;
-        goalsGuests: number;
-        timeMatch: string;
-    };
+    matchDayId: string; // Оставляем для формирования корректной ссылки клика
+    gameId: string;
+    game: Game; // Используем полную структуру объекта Game, которую вы спроектировали
 }
 
-export const MatchRow = ({ matchDayId, gameIndex, game }: MatchRowProps) => {
+export const MatchRow = ({ matchDayId, game, gameId }: MatchRowProps) => {
     const navigate = useNavigate();
 
     const handleRowClick = () => {
-        navigate(`${APP_ROUTES.GAME_RESULTS}/${matchDayId}/${gameIndex}`);
+        // Формирует путь: например, /game-results/match-day-1/game-1
+        navigate(`${APP_ROUTES.GAME_RESULTS}/${matchDayId}/${gameId}`);
     };
 
     return (
@@ -29,7 +26,7 @@ export const MatchRow = ({ matchDayId, gameIndex, game }: MatchRowProps) => {
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'space-between',
-                padding: { xs: '10px 12px', sm: '12px 16px' }, // Меньше внутренние отступы на мобилках
+                padding: { xs: '10px 12px', sm: '12px 16px' },
                 backgroundColor: (theme) => theme.palette.background.paper,
                 borderRadius: 1,
                 borderBottom: '1px solid',
@@ -37,15 +34,13 @@ export const MatchRow = ({ matchDayId, gameIndex, game }: MatchRowProps) => {
                 cursor: 'pointer',
                 transition: 'all 0.2s ease',
 
-                // ИСПРАВЛЕНО: Ховер теперь мягко светится фирменным синим цветом темы вместо старого фиолетового
                 '&:hover': {
                     backgroundColor: (theme) => alpha(theme.palette.primary.main, 0.06),
-                    // При наведении строка слегка выделяется за счет изменения цвета границы
                     borderColor: (theme) => alpha(theme.palette.primary.main, 0.2)
                 }
             }}
         >
-            {/* Время матча с адаптивным размером шрифта */}
+            {/* Время матча */}
             <Typography
                 variant="body2"
                 color="text.secondary"
@@ -67,7 +62,6 @@ export const MatchRow = ({ matchDayId, gameIndex, game }: MatchRowProps) => {
                     fontWeight: 500,
                     pr: { xs: 1, sm: 2 },
                     color: (theme) => theme.palette.text.primary,
-                    // Адаптивный шрифт + защита от переносов строк на маленьких экранах
                     fontSize: { xs: '0.85rem', sm: '0.95rem' },
                     whiteSpace: 'nowrap',
                     overflow: 'hidden',
@@ -86,8 +80,6 @@ export const MatchRow = ({ matchDayId, gameIndex, game }: MatchRowProps) => {
                         fontWeight: 'bold',
                         borderRadius: '4px',
                         fontSize: { xs: '0.8rem', sm: '0.9rem' },
-                        // Подкрашиваем табло счета в цвет карточек вашей ультратемной темы,
-                        // а текст делаем основным белым цветом
                         backgroundColor: (theme) =>
                             theme.palette.mode === 'dark' ? 'rgba(255, 255, 255, 0.06)' : '#eaeaea',
                         color: (theme) => theme.palette.text.primary,
