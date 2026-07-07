@@ -209,4 +209,115 @@ export const RESULTS_DATA: ResultsDataType = {
             }
         ]
     },
+    "match-day-3": {
+        name: "3 тур",
+        date: "28.08.2025",
+        games: [
+            {
+                id: 'game-1',
+                nameHosts: "Аякс",
+                nameGuests: "Одиссей",
+                goalsHosts: 4,
+                goalsGuests: 1,
+                referee: 'Домантович Александр',
+                dateMatch: "28.08.2025",
+                timeMatch: "19:00",
+                events: [
+                    {
+                        id: "ev1",
+                        minute: 12,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Попитич Арсений",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev2",
+                        minute: 20,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Лемешевский Даниил",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev3",
+                        minute: 22,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Полюхович Геннадий",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev4",
+                        minute: 44,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Ковалицкий Роман",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev5",
+                        minute: 48,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Киселёв Дмитрий",
+                        team: "hosts",
+                    },
+                ]
+            },
+            // {
+            //     id: 'game-2',
+            //     nameHosts: "Динамо",
+            //     nameGuests: "Спутник",
+            //     goalsHosts: 3,
+            //     goalsGuests: 2,
+            //     dateMatch: "26.08.2025",
+            //     timeMatch: "19:00",
+            //     referee: 'Домантович Александр',
+            //     events: [
+            //         {
+            //             id: "ev1",
+            //             minute: 5,
+            //             period: 1,
+            //             type: "goal",
+            //             playerName: "Козел Виталий",
+            //             team: "hosts"
+            //         },
+            //         {
+            //             id: "ev2",
+            //             minute: 10,
+            //             period: 1,
+            //             type: "goal",
+            //             playerName: "Сущинский Илья",
+            //             team: "guests"
+            //         },
+            //         {
+            //             id: "ev3",
+            //             minute: 15,
+            //             period: 1,
+            //             type: "goal",
+            //             playerName: "Козел Владимир",
+            //             team: "hosts"
+            //         },
+            //         {
+            //             id: "ev4",
+            //             minute: 22,
+            //             period: 2,
+            //             type: "goal",
+            //             playerName: "Курьянович Денис",
+            //             team: "guests"
+            //         },
+            //         {
+            //             id: "ev5",
+            //             minute: 35,
+            //             period: 2,
+            //             type: "goal",
+            //             playerName: "Козел Владимир",
+            //             team: "hosts"
+            //         },
+            //     ]
+            // }
+        ]
+    },
+
 }
