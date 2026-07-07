@@ -265,59 +265,84 @@ export const RESULTS_DATA: ResultsDataType = {
                     },
                 ]
             },
-            // {
-            //     id: 'game-2',
-            //     nameHosts: "Динамо",
-            //     nameGuests: "Спутник",
-            //     goalsHosts: 3,
-            //     goalsGuests: 2,
-            //     dateMatch: "26.08.2025",
-            //     timeMatch: "19:00",
-            //     referee: 'Домантович Александр',
-            //     events: [
-            //         {
-            //             id: "ev1",
-            //             minute: 5,
-            //             period: 1,
-            //             type: "goal",
-            //             playerName: "Козел Виталий",
-            //             team: "hosts"
-            //         },
-            //         {
-            //             id: "ev2",
-            //             minute: 10,
-            //             period: 1,
-            //             type: "goal",
-            //             playerName: "Сущинский Илья",
-            //             team: "guests"
-            //         },
-            //         {
-            //             id: "ev3",
-            //             minute: 15,
-            //             period: 1,
-            //             type: "goal",
-            //             playerName: "Козел Владимир",
-            //             team: "hosts"
-            //         },
-            //         {
-            //             id: "ev4",
-            //             minute: 22,
-            //             period: 2,
-            //             type: "goal",
-            //             playerName: "Курьянович Денис",
-            //             team: "guests"
-            //         },
-            //         {
-            //             id: "ev5",
-            //             minute: 35,
-            //             period: 2,
-            //             type: "goal",
-            //             playerName: "Козел Владимир",
-            //             team: "hosts"
-            //         },
-            //     ]
-            // }
+            {
+                id: 'game-2',
+                nameHosts: "Пикант",
+                nameGuests: "Spirits&Витязь",
+                goalsHosts: 7,
+                goalsGuests: 1,
+                dateMatch: "28.08.2025",
+                timeMatch: "19:00",
+                referee: 'Гончаренко Александр',
+                events: [
+                    {
+                        id: "ev1",
+                        minute: 4,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Павелко",
+                        team: "hosts"
+                    },
+                    {
+                        id: "ev2",
+                        minute: 8,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Вакульчик Олег",
+                        team: "guests"
+                    },
+                    {
+                        id: "ev3",
+                        minute: 30,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Татаревич Артем",
+                        team: "hosts"
+                    },
+                    {
+                        id: "ev4",
+                        minute: 33,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Свирид",
+                        team: "hosts"
+                    },
+                    {
+                        id: "ev5",
+                        minute: 35,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Баран Валерий",
+                        team: "hosts"
+                    },
+                    {
+                        id: "ev6",
+                        minute: 41,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Полюхович Григорий",
+                        team: "hosts"
+                    },
+                    {
+                        id: "ev7",
+                        minute: 47,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Баран Валерий",
+                        team: "hosts"
+                    },
+                    {
+                        id: "ev8",
+                        minute: 49,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Баран Валерий",
+                        team: "hosts"
+                    },
+                ]
+            }
         ]
     },
+
 
 }
