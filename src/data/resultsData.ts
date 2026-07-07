@@ -340,6 +340,34 @@ export const RESULTS_DATA: ResultsDataType = {
                         team: "hosts"
                     },
                 ]
+            },
+            {
+                id: 'game-3',
+                nameHosts: "Пинскдрев",
+                nameGuests: "Динамо",
+                goalsHosts: 1,
+                goalsGuests: 1,
+                dateMatch: "28.08.2025",
+                timeMatch: "20:00",
+                referee: 'Домантович Александр',
+                events: [
+                    {
+                        id: "ev1",
+                        minute: 20,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Зырко Вячеслав",
+                        team: "hosts"
+                    },
+                    {
+                        id: "ev2",
+                        minute: 50,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Ляшкевич Владислав",
+                        team: "guests"
+                    },
+                ]
             }
         ]
     },
