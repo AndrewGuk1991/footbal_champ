@@ -368,7 +368,91 @@ export const RESULTS_DATA: ResultsDataType = {
                         team: "guests"
                     },
                 ]
-            }
+            },
+            {
+                id: 'game-4',
+                nameHosts: "Арсенал",
+                nameGuests: "Спутник Полесья",
+                goalsHosts: 1,
+                goalsGuests: 8,
+                dateMatch: "28.08.2025",
+                timeMatch: "20:00",
+                referee: 'Гончаренко Александр',
+                events: [
+                    {
+                        id: "ev1",
+                        minute: 12,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Курьянович Денис",
+                        team: "guests"
+                    },
+                    {
+                        id: "ev2",
+                        minute: 25,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Велесницкий Геннадий",
+                        team: "guests"
+                    },
+                    {
+                        id: "ev3",
+                        minute: 29,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Трепачко Виктор",
+                        team: "guests"
+                    },
+                    {
+                        id: "ev4",
+                        minute: 42,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Велесницкий Геннадий",
+                        team: "guests"
+                    },
+                    {
+                        id: "ev5",
+                        minute: 43,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Сущинский Илья",
+                        team: "guests"
+                    },
+                    {
+                        id: "ev6",
+                        minute: 44,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Одилбеков Гулзархан",
+                        team: "guests"
+                    },
+                    {
+                        id: "ev7",
+                        minute: 45,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Одилбеков Гулзархан",
+                        team: "guests"
+                    },
+                    {
+                        id: "ev8",
+                        minute: 46,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Андрукевич Виталий",
+                        team: "hosts"
+                    },
+                    {
+                        id: "ev9",
+                        minute: 50,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Сущинский Илья",
+                        team: "guests"
+                    },
+                ]
+            },
         ]
     },
 
