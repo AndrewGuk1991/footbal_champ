@@ -497,77 +497,85 @@ export const RESULTS_DATA: ResultsDataType = {
             },
             {
                 id: 'game-2',
-                nameHosts: "Пикант",
-                nameGuests: "Spirits&Витязь",
-                goalsHosts: 7,
-                goalsGuests: 1,
-                dateMatch: "28.08.2025",
+                nameHosts: "Арсенал",
+                nameGuests: "Пинскдрев",
+                goalsHosts: 1,
+                goalsGuests: 8,
+                dateMatch: "02.09.2025",
                 timeMatch: "19:00",
-                referee: 'Гончаренко Александр',
+                referee: 'Домантович Александр',
                 events: [
                     {
                         id: "ev1",
-                        minute: 4,
+                        minute: 12,
                         period: 1,
                         type: "goal",
-                        playerName: "Павелко",
-                        team: "hosts"
+                        playerName: "Шелест Юрий",
+                        team: "guests"
                     },
                     {
                         id: "ev2",
-                        minute: 8,
+                        minute: 18,
                         period: 1,
                         type: "goal",
-                        playerName: "Вакульчик Олег",
+                        playerName: "Зырко Вячеслав",
                         team: "guests"
                     },
                     {
                         id: "ev3",
-                        minute: 30,
-                        period: 2,
+                        minute: 25,
+                        period: 1,
                         type: "goal",
-                        playerName: "Татаревич Артем",
+                        playerName: "Лукьянович",
                         team: "hosts"
                     },
                     {
                         id: "ev4",
-                        minute: 33,
+                        minute: 26,
                         period: 2,
                         type: "goal",
-                        playerName: "Свирид",
-                        team: "hosts"
+                        playerName: "Малец Дмитрий",
+                        team: "guests"
                     },
                     {
                         id: "ev5",
-                        minute: 35,
+                        minute: 30,
                         period: 2,
                         type: "goal",
-                        playerName: "Баран Валерий",
-                        team: "hosts"
+                        playerName: "Курильчик Андрей",
+                        team: "guests"
                     },
                     {
                         id: "ev6",
-                        minute: 41,
+                        minute: 33,
                         period: 2,
                         type: "goal",
-                        playerName: "Полюхович Григорий",
-                        team: "hosts"
+                        playerName: "Колесник Михаил",
+                        team: "guests"
                     },
                     {
                         id: "ev7",
-                        minute: 47,
+                        minute: 42,
                         period: 2,
                         type: "goal",
-                        playerName: "Баран Валерий",
-                        team: "hosts"
+                        playerName: "Бойба Николай",
+                        team: "guests"
                     },
                     {
                         id: "ev8",
-                        minute: 49,
+                        minute: 46,
                         period: 2,
                         type: "goal",
-                        playerName: "Баран Валерий",
-                        team: "hosts"
+                        playerName: "Зырко Вячеслав",
+                        team: "guests"
+                    },
+                    {
+                        id: "ev9",
+                        minute: 50,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Малащийкий Александр",
+                        team: "guests"
                     },
                 ]
             },
