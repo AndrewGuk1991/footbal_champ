@@ -455,6 +455,236 @@ export const RESULTS_DATA: ResultsDataType = {
             },
         ]
     },
+    "match-day-4": {
+        name: "4 тур",
+        date: "02.09.2025",
+        games: [
+            {
+                id: 'game-1',
+                nameHosts: "Spirits&Витязь",
+                nameGuests: "Спутник Полесья",
+                goalsHosts: 1,
+                goalsGuests: 2,
+                referee: 'Гончаренко Александр',
+                dateMatch: "02.09.2025",
+                timeMatch: "19:00",
+                events: [
+                    {
+                        id: "ev1",
+                        minute: 38,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Трепачко Виктор",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev2",
+                        minute: 46,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Одилбеков Гулзархан",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev3",
+                        minute: 50,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Резенко",
+                        team: "hosts",
+                    },
+                ]
+            },
+            {
+                id: 'game-2',
+                nameHosts: "Пикант",
+                nameGuests: "Spirits&Витязь",
+                goalsHosts: 7,
+                goalsGuests: 1,
+                dateMatch: "28.08.2025",
+                timeMatch: "19:00",
+                referee: 'Гончаренко Александр',
+                events: [
+                    {
+                        id: "ev1",
+                        minute: 4,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Павелко",
+                        team: "hosts"
+                    },
+                    {
+                        id: "ev2",
+                        minute: 8,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Вакульчик Олег",
+                        team: "guests"
+                    },
+                    {
+                        id: "ev3",
+                        minute: 30,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Татаревич Артем",
+                        team: "hosts"
+                    },
+                    {
+                        id: "ev4",
+                        minute: 33,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Свирид",
+                        team: "hosts"
+                    },
+                    {
+                        id: "ev5",
+                        minute: 35,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Баран Валерий",
+                        team: "hosts"
+                    },
+                    {
+                        id: "ev6",
+                        minute: 41,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Полюхович Григорий",
+                        team: "hosts"
+                    },
+                    {
+                        id: "ev7",
+                        minute: 47,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Баран Валерий",
+                        team: "hosts"
+                    },
+                    {
+                        id: "ev8",
+                        minute: 49,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Баран Валерий",
+                        team: "hosts"
+                    },
+                ]
+            },
+            {
+                id: 'game-3',
+                nameHosts: "Пинскдрев",
+                nameGuests: "Динамо",
+                goalsHosts: 1,
+                goalsGuests: 1,
+                dateMatch: "28.08.2025",
+                timeMatch: "20:00",
+                referee: 'Домантович Александр',
+                events: [
+                    {
+                        id: "ev1",
+                        minute: 20,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Зырко Вячеслав",
+                        team: "hosts"
+                    },
+                    {
+                        id: "ev2",
+                        minute: 50,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Ляшкевич Владислав",
+                        team: "guests"
+                    },
+                ]
+            },
+            {
+                id: 'game-4',
+                nameHosts: "Арсенал",
+                nameGuests: "Спутник Полесья",
+                goalsHosts: 1,
+                goalsGuests: 8,
+                dateMatch: "28.08.2025",
+                timeMatch: "20:00",
+                referee: 'Гончаренко Александр',
+                events: [
+                    {
+                        id: "ev1",
+                        minute: 12,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Курьянович Денис",
+                        team: "guests"
+                    },
+                    {
+                        id: "ev2",
+                        minute: 25,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Велесницкий Геннадий",
+                        team: "guests"
+                    },
+                    {
+                        id: "ev3",
+                        minute: 29,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Трепачко Виктор",
+                        team: "guests"
+                    },
+                    {
+                        id: "ev4",
+                        minute: 42,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Велесницкий Геннадий",
+                        team: "guests"
+                    },
+                    {
+                        id: "ev5",
+                        minute: 43,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Сущинский Илья",
+                        team: "guests"
+                    },
+                    {
+                        id: "ev6",
+                        minute: 44,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Одилбеков Гулзархан",
+                        team: "guests"
+                    },
+                    {
+                        id: "ev7",
+                        minute: 45,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Одилбеков Гулзархан",
+                        team: "guests"
+                    },
+                    {
+                        id: "ev8",
+                        minute: 46,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Андрукевич Виталий",
+                        team: "hosts"
+                    },
+                    {
+                        id: "ev9",
+                        minute: 50,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Сущинский Илья",
+                        team: "guests"
+                    },
+                ]
+            },
+        ]
+    },
 
 
 }
