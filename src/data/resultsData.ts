@@ -711,6 +711,51 @@ export const RESULTS_DATA: ResultsDataType = {
                 ]
             },
             {
+                id: 'game-2',
+                nameHosts: "Одиссей",
+                nameGuests: "Динамо",
+                goalsHosts: 1,
+                goalsGuests: 3,
+                referee: 'Куратник Павел',
+                dateMatch: "04.09.2025",
+                timeMatch: "19:00",
+                events: [
+                    {
+                        id: "ev1",
+                        minute: 15,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Шевчук Олег",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev2",
+                        minute: 30,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Конончук Герман",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev3",
+                        minute: 31,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Куделич Павел",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev4",
+                        minute: 42,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Козловский Алексей (в свои ворота)",
+                        team: "guests",
+                    },
+
+                ]
+            },
+            {
                 id: 'game-4',
                 nameHosts: "Аякс",
                 nameGuests: "Арсенал",
