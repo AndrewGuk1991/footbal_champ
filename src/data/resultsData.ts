@@ -756,6 +756,51 @@ export const RESULTS_DATA: ResultsDataType = {
                 ]
             },
             {
+                id: 'game-3',
+                nameHosts: "Spirits&Витязь",
+                nameGuests: "Пинскдрев",
+                goalsHosts: 2,
+                goalsGuests: 2,
+                referee: 'Домантович Александр',
+                dateMatch: "04.09.2025",
+                timeMatch: "20:00",
+                events: [
+                    {
+                        id: "ev1",
+                        minute: 13,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Репецкий Александр",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev2",
+                        minute: 27,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Кулина Станислав",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev3",
+                        minute: 36,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Кононович Дмитрий",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev4",
+                        minute: 44,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Воронин",
+                        team: "hosts",
+                    },
+
+                ]
+            },
+            {
                 id: 'game-4',
                 nameHosts: "Аякс",
                 nameGuests: "Арсенал",
