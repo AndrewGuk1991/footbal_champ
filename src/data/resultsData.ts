@@ -683,13 +683,42 @@ export const RESULTS_DATA: ResultsDataType = {
         games: [
             {
                 id: 'game-1',
+                nameHosts: "Пикант",
+                nameGuests: "Спутник-Полесья",
+                goalsHosts: 0,
+                goalsGuests: 2,
+                referee: 'Домантович Александр',
+                dateMatch: "04.09.2025",
+                timeMatch: "19:00",
+                events: [
+                    {
+                        id: "ev1",
+                        minute: 21,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Сущинский Илья",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev2",
+                        minute: 25,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Ребковец Леонид",
+                        team: "guests",
+                    },
+
+                ]
+            },
+            {
+                id: 'game-4',
                 nameHosts: "Аякс",
                 nameGuests: "Арсенал",
                 goalsHosts: 7,
                 goalsGuests: 0,
                 referee: 'Куратник Павел',
                 dateMatch: "04.09.2025",
-                timeMatch: "19:00",
+                timeMatch: "20:00",
                 events: [
                     {
                         id: "ev1",
