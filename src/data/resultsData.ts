@@ -677,6 +677,81 @@ export const RESULTS_DATA: ResultsDataType = {
             },
         ]
     },
+    "match-day-5": {
+        name: "5 тур",
+        date: "04.09.2025",
+        games: [
+            {
+                id: 'game-1',
+                nameHosts: "Аякс",
+                nameGuests: "Арсенал",
+                goalsHosts: 7,
+                goalsGuests: 0,
+                referee: 'Куратник Павел',
+                dateMatch: "04.09.2025",
+                timeMatch: "19:00",
+                events: [
+                    {
+                        id: "ev1",
+                        minute: 5,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Полюхович Геннадий",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev2",
+                        minute: 10,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Лемешевский Даниил",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev3",
+                        minute: 15,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Радионов Евгений",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev4",
+                        minute: 21,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Сидоревич Владимир",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev5",
+                        minute: 43,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Радионов Евгений",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev6",
+                        minute: 44,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Полюхович Геннадий",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev7",
+                        minute: 49,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Сидоревич Владимир",
+                        team: "hosts",
+                    },
+                ]
+            },
+
+        ]
+    },
 
 
 }
