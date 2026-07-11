@@ -1049,7 +1049,26 @@ export const RESULTS_DATA: ResultsDataType = {
                     },
                 ]
             },
-
+            {
+                id: 'game-4',
+                nameHosts: "Spirits&Витязь",
+                nameGuests: "Аякс",
+                goalsHosts: 1,
+                goalsGuests: 0,
+                referee: 'Домантович Александр',
+                dateMatch: "09.09.2025",
+                timeMatch: "20:00",
+                events: [
+                    {
+                        id: "ev1",
+                        minute: 13,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Воронин",
+                        team: "hosts",
+                    }
+                ]
+            },
         ]
     },
 
