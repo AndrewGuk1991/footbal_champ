@@ -973,7 +973,82 @@ export const RESULTS_DATA: ResultsDataType = {
 
                 ]
             },
-
+            {
+                id: 'game-3',
+                nameHosts: "Одиссей",
+                nameGuests: "Арсенал",
+                goalsHosts: 8,
+                goalsGuests: 0,
+                referee: 'Гончаренко Александр',
+                dateMatch: "09.09.2025",
+                timeMatch: "20:00",
+                events: [
+                    {
+                        id: "ev1",
+                        minute: 6,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Манюк Александр",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev2",
+                        minute: 15,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Ляшук",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev3",
+                        minute: 21,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Ляшук",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev4",
+                        minute: 24,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Манюк Александр",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev5",
+                        minute: 30,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Ляшук",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev6",
+                        minute: 34,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Пивень",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev7",
+                        minute: 36,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Цебрук Назар",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev8",
+                        minute: 50,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Колбович",
+                        team: "hosts",
+                    },
+                ]
+            },
 
         ]
     },
