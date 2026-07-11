@@ -920,6 +920,59 @@ export const RESULTS_DATA: ResultsDataType = {
 
                 ]
             },
+            {
+                id: 'game-2',
+                nameHosts: "Пикант",
+                nameGuests: "Динамо",
+                goalsHosts: 5,
+                goalsGuests: 0,
+                referee: 'Домантович Александр',
+                dateMatch: "09.09.2025",
+                timeMatch: "19:00",
+                events: [
+                    {
+                        id: "ev1",
+                        minute: 22,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Павелко",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev2",
+                        minute: 27,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Головко Михаил",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev3",
+                        minute: 31,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Павелко",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev4",
+                        minute: 49,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Мовчун Павел",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev5",
+                        minute: 50,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Павелко",
+                        team: "hosts",
+                    },
+
+                ]
+            },
 
 
         ]
