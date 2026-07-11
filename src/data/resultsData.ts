@@ -871,6 +871,59 @@ export const RESULTS_DATA: ResultsDataType = {
 
         ]
     },
+    "match-day-6": {
+        name: "6 тур",
+        date: "09.09.2025",
+        games: [
+            {
+                id: 'game-1',
+                nameHosts: "Спутник-Полесья",
+                nameGuests: "Пинскдрев",
+                goalsHosts: 1,
+                goalsGuests: 3,
+                referee: 'Гончаренко Александр',
+                dateMatch: "09.09.2025",
+                timeMatch: "19:00",
+                events: [
+                    {
+                        id: "ev1",
+                        minute: 15,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Колесник Михаил",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev2",
+                        minute: 22,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Каменец Дмитрий",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev3",
+                        minute: 41,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Каменец Дмитрий",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev4",
+                        minute: 47,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Курьянович Денис",
+                        team: "hosts",
+                    },
+
+                ]
+            },
+
+
+        ]
+    },
 
 
 }
