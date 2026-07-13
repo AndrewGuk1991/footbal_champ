@@ -1136,7 +1136,42 @@ export const RESULTS_DATA: ResultsDataType = {
 
                 ]
             },
-
+            {
+                id: 'game-2',
+                nameHosts: "Пикант",
+                nameGuests: "Пинскдрев",
+                goalsHosts: 2,
+                goalsGuests: 1,
+                referee: 'Домантович Александр',
+                dateMatch: "11.09.2025",
+                timeMatch: "19:00",
+                events: [
+                    {
+                        id: "ev1",
+                        minute: 31,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Свирид",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev2",
+                        minute: 33,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Антоник Иван",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev3",
+                        minute: 50,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Мовчун Павел",
+                        team: "hosts",
+                    }
+                ]
+            },
         ]
     },
 
