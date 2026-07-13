@@ -1071,6 +1071,74 @@ export const RESULTS_DATA: ResultsDataType = {
             },
         ]
     },
+    "match-day-7": {
+        name: "7 тур",
+        date: "11.09.2025",
+        games: [
+            {
+                id: 'game-1',
+                nameHosts: "Динамо",
+                nameGuests: "Арсенал",
+                goalsHosts: 5,
+                goalsGuests: 1,
+                referee: 'Куратник Павел',
+                dateMatch: "11.09.2025",
+                timeMatch: "19:00",
+                events: [
+                    {
+                        id: "ev1",
+                        minute: 8,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Козел Виталий",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev2",
+                        minute: 19,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Шиг Даниил",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev3",
+                        minute: 32,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Редько",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev4",
+                        minute: 40,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Андрукевич Виталий",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev5",
+                        minute: 48,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Шиг Даниил",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev6",
+                        minute: 49,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Ляшкевич Владислав",
+                        team: "hosts",
+                    },
+
+                ]
+            },
+
+        ]
+    },
 
 
 }
