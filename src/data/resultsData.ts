@@ -1264,6 +1264,35 @@ export const RESULTS_DATA: ResultsDataType = {
                     },
                 ]
             },
+            {
+                id: 'game-4',
+                nameHosts: "Спутник Полесья",
+                nameGuests: "Аякс",
+                goalsHosts: 2,
+                goalsGuests: 0,
+                referee: 'Куратник Павел',
+                dateMatch: "11.09.2025",
+                timeMatch: "20:00",
+                events: [
+                    {
+                        id: "ev1",
+                        minute: 27,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Толковский Артём",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev2",
+                        minute: 33,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Сущинский Илья",
+                        team: "hosts",
+                    }
+                ]
+            },
+
         ]
     },
 
