@@ -76,11 +76,12 @@ export const TEAMS_DATA: Record<string, TeamData> = {
         goalsAgainst: 14,
         goalsDifference: '+30',
         points: 30,
-        goalkeepers: [],
+        goalkeepers: [
+            { name: 'Александр', surname: 'Адамович', number: 4, games: 14, yellowCards: 1 }
+        ],
         defenders: [
             { name: 'Михаил', surname: 'Колесник', number: 2, games: 14 },
             { name: 'Андрей', surname: 'Вайтович', number: 3, games: 14 },
-            { name: 'Александр', surname: 'Адамович', number: 4, games: 14, yellowCards: 1 }
         ],
         midfielders: [
             { name: 'Дмитрий', surname: 'Каменец', number: 6, goals: 4, games: 14 },
@@ -95,6 +96,7 @@ export const TEAMS_DATA: Record<string, TeamData> = {
             { name: 'Артур', surname: 'Демчишин', number: 17, games: 14 },
             { name: 'Андрей', surname: 'Курильчик', number: 21, games: 14 },
             { name: 'Александр', surname: 'Малащицкий', number: 18, games: 14 },
+
         ]
     },
     'sputnik': {
@@ -108,24 +110,29 @@ export const TEAMS_DATA: Record<string, TeamData> = {
         goalsAgainst: 22,
         goalsDifference: '+13',
         points: 24,
-        goalkeepers: [],
+        goalkeepers: [
+            { name: 'Павел', surname: 'Дубина', number: 4, games: 14 },
+        ],
         defenders: [
-            { name: 'Василий', surname: 'Кравчук', number: 4 },
-            { name: 'Артем', surname: 'Мельник', number: 5 },
-            { name: 'Егор', surname: 'Бычков', number: 12 },
-            { name: 'Денис', surname: 'Ткаченко', number: 14 },
+
+            { name: 'Вадим', surname: 'Кислюк', number: 5, games: 14 },
+            { name: 'Георгий', surname: 'Пешко', number: 12, games: 14 },
+            { name: 'Роман', surname: 'Зельман', number: 14, games: 14 },
+            { name: 'Леонид', surname: 'Ребковец', number: 21, games: 14 },
         ],
         midfielders: [
-            { name: 'Роман', surname: 'Шевченко', number: 6 },
-            { name: 'Илья', surname: 'Сущинский', number: 8, goals: 6 },
-            { name: 'Никита', surname: 'Мороз', number: 10 },
-            { name: 'Антон', surname: 'Клименко', number: 22 },
+            { name: 'Геннадий', surname: 'Велесницкий', number: 6, games: 14 },
+            { name: 'Илья', surname: 'Сущинский', number: 8, goals: 6, games: 14 },
+            { name: 'Денис', surname: 'Курьянович', number: 10, games: 14 },
+            { name: 'Богдан', surname: 'Малайчук', number: 22, games: 14 },
+            { name: 'Роман', surname: 'Трухан', number: 15, games: 14 },
         ],
         forwards: [
-            { name: 'Виктор', surname: 'Трепачко', number: 7, goals: 7 },
-            { name: 'Гулзархан', surname: 'Одилбеков', number: 9, goals: 4 },
-            { name: 'Ярослав', surname: 'Савченко', number: 11 },
-            { name: 'Даниил', surname: 'Коваль', number: 99 },
+            { name: 'Виктор', surname: 'Трепачко', number: 7, goals: 7, games: 14 },
+            { name: 'Гулзархан', surname: 'Одилбеков', number: 9, goals: 4, games: 14 },
+            { name: 'Дмитрий', surname: 'Буката', number: 11, games: 14 },
+            { name: 'Владислав', surname: 'Уваров', number: 16, games: 14 },
+            { name: 'Петр', surname: 'Голод', number: 99, games: 14 },
         ]
     },
     'pikant': {
