@@ -146,12 +146,13 @@ export const TEAMS_DATA: Record<string, TeamData> = {
         goalsAgainst: 15,
         goalsDifference: '+52',
         points: 37,
-        goalkeepers: [],
+        goalkeepers: [
+            { name: 'Даниил', surname: 'Шпаковский', number: 1, games: 14 },
+        ],
         defenders: [
             { name: 'Денис', surname: 'Бут-Гусаим', number: 3, games: 14 },
             { name: 'Григорий', surname: 'Полюхович', number: 5, games: 14 },
             { name: 'Артем', surname: 'Татаревич', number: 13, games: 14 },
-            { name: 'Даниил', surname: 'Шпаковский', number: 18, games: 14 },
         ],
         midfielders: [
             { name: '...', surname: 'Павелко', number: 8, goals: 10, games: 14 },
@@ -175,24 +176,23 @@ export const TEAMS_DATA: Record<string, TeamData> = {
         goalsAgainst: 30,
         goalsDifference: '-1',
         points: 19,
-        goalkeepers: [],
+        goalkeepers: [
+            { name: 'Иван', surname: 'Козел', number: 1 },
+        ],
         defenders: [
-            { name: 'Александр', surname: 'Иванов', number: 2 },
-            { name: 'Дмитрий', surname: 'Петров', number: 4 },
-            { name: 'Сергей', surname: 'Новиков', number: 5 },
-            { name: 'Павел', surname: 'Морозов', number: 14 }
+            { name: 'Александр', surname: 'Вакулич', number: 2 },
+            { name: 'Олег', surname: 'Шевчук', number: 4 },
         ],
         midfielders: [
-            { name: 'Алексей', surname: 'Смирнов', number: 6 },
-            { name: 'Максим', surname: 'Козлов', number: 7 },
-            { name: 'Игорь', surname: 'Лебедев', number: 8 },
-            { name: 'Артем', surname: 'Соколов', number: 10 }
+            { name: 'Виталий', surname: 'Козел', number: 6 },
+            { name: 'Павел', surname: 'Куделич', number: 7 },
+            { name: 'Максим', surname: 'Ляшкевич', number: 8 },
         ],
         forwards: [
             { name: 'Владислав', surname: 'Ляшкевич', number: 9, goals: 4 },
             { name: 'Даниил', surname: 'Шиг', number: 11, goals: 4 },
-            { name: 'Илья', surname: 'Васильев', number: 22 },
-            { name: 'Данила', surname: 'Федоров', number: 77 }
+            { name: 'Павел', surname: 'Пошелюк', number: 22 },
+            { name: 'Александр', surname: 'Троцкий', number: 77 }
         ]
     },
     'odyssey': {
