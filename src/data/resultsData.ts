@@ -917,6 +917,14 @@ export const RESULTS_DATA: ResultsDataType = {
                         playerName: "Курьянович Денис",
                         team: "hosts",
                     },
+                    {
+                        id: "ev5",
+                        minute: 48,
+                        period: 2,
+                        type: "yellow_card",
+                        playerName: "Адамович Александр",
+                        team: "guests",
+                    },
 
                 ]
             },
