@@ -148,22 +148,20 @@ export const TEAMS_DATA: Record<string, TeamData> = {
         points: 37,
         goalkeepers: [],
         defenders: [
-            { name: 'Геннадий', surname: 'Тарасевич', number: 3 },
-            { name: 'Валерий', surname: 'Юшкевич', number: 5 },
-            { name: 'Леонид', surname: 'Грицевич', number: 13 },
-            { name: 'Станислав', surname: 'Шпаковский', number: 18 },
+            { name: 'Денис', surname: 'Бут-Гусаим', number: 3, games: 14 },
+            { name: 'Григорий', surname: 'Полюхович', number: 5, games: 14 },
+            { name: 'Артем', surname: 'Татаревич', number: 13, games: 14 },
+            { name: 'Даниил', surname: 'Шпаковский', number: 18, games: 14 },
         ],
         midfielders: [
-            { name: '...', surname: 'Павелко', number: 8, goals: 10 },
-            { name: 'Валерий', surname: 'Баран', number: 14, goals: 9 },
-            { name: 'Константин', surname: 'Кончаленко', number: 16, goals: 4 },
-            { name: 'Георгий', surname: 'Барановский', number: 20 },
+            { name: '...', surname: 'Павелко', number: 8, goals: 10, games: 14 },
+            { name: 'Константин', surname: 'Кончаленко', number: 16, goals: 4, games: 14 },
+            { name: 'Михаил', surname: 'Головко', number: 20, games: 14 },
         ],
         forwards: [
-            { name: 'Павел', surname: 'Мовчун', number: 9, goals: 17 },
-            { name: '...', surname: 'Свирид', number: 10, goals: 13 },
-            { name: 'Руслан', surname: 'Левкович', number: 11 },
-            { name: 'Юрий', surname: 'Борисевич', number: 77 },
+            { name: 'Павел', surname: 'Мовчун', number: 9, goals: 17, games: 14 },
+            { name: '...', surname: 'Свирид', number: 10, goals: 13, games: 14 },
+            { name: 'Валерий', surname: 'Баран', number: 14, goals: 9, games: 14 },
         ]
     },
     'dinamo': {
