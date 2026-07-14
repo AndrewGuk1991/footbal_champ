@@ -78,22 +78,23 @@ export const TEAMS_DATA: Record<string, TeamData> = {
         points: 30,
         goalkeepers: [],
         defenders: [
-            { name: 'Иван', surname: 'Шелест', number: 2, games: 14 },
-            { name: 'Сергей', surname: 'Борисевич', number: 3, games: 14 },
-            { name: 'Олег', surname: 'Король', number: 4, games: 14 },
-            { name: 'Николай', surname: 'Дрозд', number: 15, games: 14 },
+            { name: 'Михаил', surname: 'Колесник', number: 2, games: 14 },
+            { name: 'Андрей', surname: 'Вайтович', number: 3, games: 14 },
+            { name: 'Александр', surname: 'Адамович', number: 4, games: 14, yellowCards: 1 }
         ],
         midfielders: [
             { name: 'Дмитрий', surname: 'Каменец', number: 6, goals: 4, games: 14 },
-            { name: 'Александр', surname: 'Кохнович', number: 9, games: 14 },
-            { name: 'Михаил', surname: 'Павловец', number: 8, games: 14 },
+            { name: 'Станислав', surname: 'Кулина', number: 9, games: 14 },
+            { name: 'Дмитрий', surname: 'Кононович', number: 8, games: 14 },
             { name: 'Иван', surname: 'Антоник', number: 10, goals: 5, games: 14 },
+            { name: 'Дмитрий', surname: 'Малец', number: 14, games: 14 },
         ],
         forwards: [
             { name: 'Вячеслав', surname: 'Зырко', number: 7, goals: 9, games: 14 },
             { name: 'Николай', surname: 'Бойба', number: 11, goals: 8, games: 14 },
-            { name: 'Кирилл', surname: 'Гришко', number: 17, games: 14 },
-            { name: 'Павел', surname: 'Якубович', number: 21, games: 14 },
+            { name: 'Артур', surname: 'Демчишин', number: 17, games: 14 },
+            { name: 'Андрей', surname: 'Курильчик', number: 21, games: 14 },
+            { name: 'Александр', surname: 'Малащицкий', number: 18, games: 14 },
         ]
     },
     'sputnik': {
