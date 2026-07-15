@@ -266,24 +266,23 @@ export const TEAMS_DATA: Record<string, TeamData> = {
         goalsAgainst: 109,
         goalsDifference: '-96',
         points: 3,
-        goalkeepers: [],
+        goalkeepers: [
+            { name: 'Валерий', surname: 'Андрукевич', number: 1 },
+        ],
         defenders: [
-            { name: 'Константин', surname: 'Карпов', number: 3 },
+            { name: '...', surname: 'Лукьянович', number: 3 },
             { name: 'Леонид', surname: 'Власов', number: 5 },
             { name: 'Виталий', surname: 'Федотов', number: 12 },
-            { name: 'Валерий', surname: 'Никитин', number: 16 }
         ],
         midfielders: [
             { name: 'Эдуард', surname: 'Малышев', number: 4 },
             { name: 'Георгий', surname: 'Алексеев', number: 8 },
             { name: 'Вадим', surname: 'Беляев', number: 17 },
-            { name: 'Вячеслав', surname: 'Кузнецов', number: 20 }
         ],
         forwards: [
-            { name: 'Евгений', surname: 'Степанов', number: 10 },
+            { name: 'Виталий', surname: 'Андрукевич', number: 10 },
             { name: 'Григорий', surname: 'Егоров', number: 11 },
             { name: 'Юрий', surname: 'Козлов', number: 19 },
-            { name: 'Анатолий', surname: 'Смирнов', number: 27 }
         ]
     }
 };
