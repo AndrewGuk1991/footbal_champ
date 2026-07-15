@@ -1074,6 +1074,30 @@ export const RESULTS_DATA: ResultsDataType = {
                         type: "goal",
                         playerName: "Воронин",
                         team: "hosts",
+                    },
+                    {
+                        id: "ev2",
+                        minute: 20,
+                        period: 1,
+                        type: "yellow_card",
+                        playerName: "Киселев Дмитрий",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev3",
+                        minute: 30,
+                        period: 2,
+                        type: "yellow_card",
+                        playerName: "Лемешевский Даниил",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev4",
+                        minute: 50,
+                        period: 2,
+                        type: "red_card",
+                        playerName: "Мелюх Денис",
+                        team: "guests",
                     }
                 ]
             },
