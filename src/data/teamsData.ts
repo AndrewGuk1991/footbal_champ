@@ -208,22 +208,20 @@ export const TEAMS_DATA: Record<string, TeamData> = {
         points: 13,
         goalkeepers: [],
         defenders: [
-            { name: 'Олег', surname: 'Павлов', number: 3 },
-            { name: 'Антон', surname: 'Марков', number: 15 },
-            { name: 'Ярослав', surname: 'Орлов', number: 18 },
-            { name: 'Владислав', surname: 'Зайцев', number: 23 }
+            { name: 'Назар', surname: 'Цебрук', number: 3 },
+            { name: 'Александр', surname: 'Манюк', number: 15 },
+            { name: '...', surname: 'Колбович', number: 18 },
         ],
         midfielders: [
-            { name: 'Егор', surname: 'Макаров', number: 16 },
-            { name: 'Денис', surname: 'Волков', number: 17 },
-            { name: 'Кирилл', surname: 'Соловьев', number: 20 },
-            { name: 'Тимофей', surname: 'Борисов', number: 21 }
+            { name: 'Арсений', surname: 'Попитич', number: 16 },
+            { name: 'Александр', surname: 'Лодыга', number: 17 },
+            { name: 'Алексей', surname: 'Козловский', number: 20 },
+            { name: 'Герман', surname: 'Конончук', number: 21, goals: 1 },
         ],
         forwards: [
             { name: '...', surname: 'Ляшук', number: 11, goals: 4 },
             { name: '...', surname: 'Пивень', number: 19, goals: 4 },
-            { name: '...', surname: 'Самуйлик', number: 25, goals: 4 },
-            { name: 'Глеб', surname: 'Кудрявцев', number: 99 }
+            { name: '...', surname: 'Самуйлик', number: 25, goals: 4 }
         ]
     },
     'vityaz': {
