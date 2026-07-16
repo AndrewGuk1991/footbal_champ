@@ -80,22 +80,23 @@ export const TEAMS_DATA: Record<string, TeamData> = {
             { name: 'Александр', surname: 'Адамович', number: 4, games: 14, yellowCards: 1 }
         ],
         defenders: [
-            { name: 'Михаил', surname: 'Колесник', number: 2, games: 14 },
+            { name: 'Михаил', surname: 'Колесник', number: 2, games: 14, goals: 1 },
             { name: 'Андрей', surname: 'Вайтович', number: 3, games: 14 },
+            { name: 'Юрий', surname: 'Шелест', number: 4, games: 14, goals: 1 },
         ],
         midfielders: [
             { name: 'Дмитрий', surname: 'Каменец', number: 6, goals: 4, games: 14 },
             { name: 'Станислав', surname: 'Кулина', number: 9, games: 14 },
             { name: 'Дмитрий', surname: 'Кононович', number: 8, games: 14 },
             { name: 'Иван', surname: 'Антоник', number: 10, goals: 5, games: 14 },
-            { name: 'Дмитрий', surname: 'Малец', number: 14, games: 14 },
+            { name: 'Дмитрий', surname: 'Малец', number: 14, games: 14, goals: 1 },
         ],
         forwards: [
             { name: 'Вячеслав', surname: 'Зырко', number: 7, goals: 9, games: 14 },
             { name: 'Николай', surname: 'Бойба', number: 11, goals: 8, games: 14 },
             { name: 'Артур', surname: 'Демчишин', number: 17, games: 14 },
-            { name: 'Андрей', surname: 'Курильчик', number: 21, games: 14 },
-            { name: 'Александр', surname: 'Малащицкий', number: 18, games: 14 },
+            { name: 'Андрей', surname: 'Курильчик', number: 21, games: 14, goals: 1 },
+            { name: 'Александр', surname: 'Малащицкий', number: 18, games: 14, goals: 1 },
 
         ]
     },
@@ -266,7 +267,7 @@ export const TEAMS_DATA: Record<string, TeamData> = {
             { name: 'Валерий', surname: 'Андрукевич', number: 1 },
         ],
         defenders: [
-            { name: '...', surname: 'Лукьянович', number: 3 },
+            { name: '...', surname: 'Лукьянович', number: 3, goals: 1 },
             { name: 'Леонид', surname: 'Власов', number: 5 },
             { name: 'Виталий', surname: 'Федотов', number: 12 },
         ],
