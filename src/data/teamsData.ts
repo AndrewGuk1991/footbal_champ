@@ -183,11 +183,11 @@ export const TEAMS_DATA: Record<string, TeamData> = {
         ],
         defenders: [
             { name: 'Александр', surname: 'Вакулич', number: 2 },
-            { name: 'Олег', surname: 'Шевчук', number: 4 },
+            { name: 'Олег', surname: 'Шевчук', number: 4, goals: 1 },
         ],
         midfielders: [
             { name: 'Виталий', surname: 'Козел', number: 6, goals: 1 },
-            { name: 'Павел', surname: 'Куделич', number: 7 },
+            { name: 'Павел', surname: 'Куделич', number: 7, goals: 1 },
             { name: 'Максим', surname: 'Ляшкевич', number: 8, goals: 1 },
         ],
         forwards: [
@@ -217,8 +217,8 @@ export const TEAMS_DATA: Record<string, TeamData> = {
         midfielders: [
             { name: 'Арсений', surname: 'Попитич', number: 16, goals: 1 },
             { name: 'Александр', surname: 'Лодыга', number: 17, goals: 1 },
-            { name: 'Алексей', surname: 'Козловский', number: 20 },
-            { name: 'Герман', surname: 'Конончук', number: 21, goals: 1 },
+            { name: 'Алексей', surname: 'Козловский', number: 20 }, //1 автогол
+            { name: 'Герман', surname: 'Конончук', number: 21, goals: 2 },
         ],
         forwards: [
             { name: '...', surname: 'Ляшук', number: 11, goals: 4 },
