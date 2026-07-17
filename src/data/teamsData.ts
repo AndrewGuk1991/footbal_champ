@@ -148,10 +148,10 @@ export const TEAMS_DATA: Record<string, TeamData> = {
         goalsDifference: '+52',
         points: 37,
         goalkeepers: [
-            { name: 'Даниил', surname: 'Шпаковский', number: 1, games: 14 },
+
         ],
         defenders: [
-            { name: 'Денис', surname: 'Бут-Гусаим', number: 3, games: 14 },
+            { name: 'Денис', surname: 'Бут-Гусаим', number: 3, games: 14, goals: 1 },
             { name: 'Григорий', surname: 'Полюхович', number: 5, games: 14, goals: 1 },
             { name: 'Артем', surname: 'Татаревич', number: 13, games: 14, goals: 1 },
         ],
@@ -159,6 +159,7 @@ export const TEAMS_DATA: Record<string, TeamData> = {
             { name: '...', surname: 'Павелко', number: 8, goals: 10, games: 14 },
             { name: 'Константин', surname: 'Кончаленко', number: 16, goals: 4, games: 14 },
             { name: 'Михаил', surname: 'Головко', number: 20, games: 14 },
+            { name: 'Даниил', surname: 'Шпаковский', number: 11, games: 14, goals: 1 },
         ],
         forwards: [
             { name: 'Павел', surname: 'Мовчун', number: 9, goals: 17, games: 14 },
@@ -215,7 +216,7 @@ export const TEAMS_DATA: Record<string, TeamData> = {
         ],
         midfielders: [
             { name: 'Арсений', surname: 'Попитич', number: 16, goals: 1 },
-            { name: 'Александр', surname: 'Лодыга', number: 17 },
+            { name: 'Александр', surname: 'Лодыга', number: 17, goals: 1 },
             { name: 'Алексей', surname: 'Козловский', number: 20 },
             { name: 'Герман', surname: 'Конончук', number: 21, goals: 1 },
         ],
