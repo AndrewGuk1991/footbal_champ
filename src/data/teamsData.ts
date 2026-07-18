@@ -54,7 +54,7 @@ export const TEAMS_DATA: Record<string, TeamData> = {
         midfielders: [
             { name: 'Марк', surname: 'Кот', number: 6, games: 14 },
             { name: 'Владимир', surname: 'Сидоревич', number: 7, goals: 4, games: 14 },
-            { name: 'Андрей', surname: 'Гук', number: 8, games: 14, yellowCards: 1, photo: player_8, goals: 2 },
+            { name: 'Андрей', surname: 'Гук', number: 8, games: 14, yellowCards: 1, photo: player_8},
             { name: 'Евгенний', surname: 'Радионов', number: 11, games: 14, goals: 2 },
         ],
         forwards: [
