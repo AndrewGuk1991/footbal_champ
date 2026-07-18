@@ -115,7 +115,6 @@ export const TEAMS_DATA: Record<string, TeamData> = {
             { name: 'Павел', surname: 'Дубина', number: 4, games: 14 },
         ],
         defenders: [
-
             { name: 'Вадим', surname: 'Кислюк', number: 5, games: 14 },
             { name: 'Георгий', surname: 'Пешко', number: 12, games: 14 },
             { name: 'Роман', surname: 'Зельман', number: 14, games: 14 },
@@ -158,7 +157,7 @@ export const TEAMS_DATA: Record<string, TeamData> = {
         midfielders: [
             { name: '...', surname: 'Павелко', number: 8, goals: 10, games: 14 },
             { name: 'Константин', surname: 'Кончаленко', number: 16, goals: 4, games: 14 },
-            { name: 'Михаил', surname: 'Головко', number: 20, games: 14 },
+            { name: 'Михаил', surname: 'Головко', number: 20, games: 14, goals: 1 },
             { name: 'Даниил', surname: 'Шпаковский', number: 11, games: 14, goals: 1 },
         ],
         forwards: [
