@@ -1196,6 +1196,14 @@ export const RESULTS_DATA: ResultsDataType = {
                     },
                     {
                         id: "ev3",
+                        minute: 40,
+                        period: 2,
+                        type: "yellow_card",
+                        playerName: "Каменец Дмитрий",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev4",
                         minute: 50,
                         period: 2,
                         type: "goal",
