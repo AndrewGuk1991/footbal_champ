@@ -133,6 +133,7 @@ export const TEAMS_DATA: Record<string, TeamData> = {
             { name: 'Дмитрий', surname: 'Буката', number: 11, games: 14 },
             { name: 'Владислав', surname: 'Уваров', number: 16, games: 14 },
             { name: 'Петр', surname: 'Голод', number: 99, games: 14 },
+            { name: 'Артем', surname: 'Толковский', number: 19, games: 14, goals: 1 },
         ]
     },
     'pikant': {
