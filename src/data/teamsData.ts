@@ -183,9 +183,10 @@ export const TEAMS_DATA: Record<string, TeamData> = {
         defenders: [
             { name: 'Александр', surname: 'Вакулич', number: 2 },
             { name: 'Олег', surname: 'Шевчук', number: 4, goals: 1 },
+            { name: '...', surname: 'Редько', number: 5, goals: 1 },
         ],
         midfielders: [
-            { name: 'Виталий', surname: 'Козел', number: 6, goals: 1 },
+            { name: 'Виталий', surname: 'Козел', number: 6, goals: 2 },
             { name: 'Павел', surname: 'Куделич', number: 7, goals: 1 },
             { name: 'Максим', surname: 'Ляшкевич', number: 8, goals: 1 },
         ],
@@ -264,12 +265,13 @@ export const TEAMS_DATA: Record<string, TeamData> = {
         goalsDifference: '-96',
         points: 3,
         goalkeepers: [
-            { name: 'Валерий', surname: 'Андрукевич', number: 1 },
+
         ],
         defenders: [
             { name: '...', surname: 'Лукьянович', number: 3, goals: 1 },
             { name: 'Леонид', surname: 'Власов', number: 5 },
             { name: 'Виталий', surname: 'Федотов', number: 12 },
+            { name: 'Валерий', surname: 'Андрукевич', number: 14, goals: 1 },
         ],
         midfielders: [
             { name: 'Эдуард', surname: 'Малышев', number: 4 },
@@ -283,4 +285,7 @@ export const TEAMS_DATA: Record<string, TeamData> = {
         ]
     }
 };
+
+
+// 7 тур
 
