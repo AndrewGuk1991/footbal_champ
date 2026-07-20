@@ -1335,6 +1335,51 @@ export const RESULTS_DATA: ResultsDataType = {
 
         ]
     },
+    "match-day-8": {
+        name: "8 тур",
+        date: "16.09.2025",
+        games: [
+            {
+                id: 'game-1',
+                nameHosts: "Spirits&Витязь",
+                nameGuests: "Динамо",
+                goalsHosts: 2,
+                goalsGuests: 1,
+                referee: 'Куратник Павел',
+                dateMatch: "11.09.2025",
+                timeMatch: "19:00",
+                events: [
+                    {
+                        id: "ev1",
+                        minute: 6,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Рокало Юрий",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev2",
+                        minute: 12,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Антонович",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev3",
+                        minute: 35,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Козел Виталий",
+                        team: "guests",
+                    }
+                ]
+            },
 
+
+        ]
+    },
 
 }
+
+// 8 тур
