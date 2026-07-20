@@ -1543,6 +1543,42 @@ export const RESULTS_DATA: ResultsDataType = {
                     },
                 ]
             },
+            {
+                id: 'game-4',
+                nameHosts: "Аякс",
+                nameGuests: "Пинскдрев",
+                goalsHosts: 2,
+                goalsGuests: 1,
+                referee: 'Домантович Александр',
+                dateMatch: "16.09.2025",
+                timeMatch: "20:00",
+                events: [
+                    {
+                        id: "ev1",
+                        minute: 25,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Киселев Дмитрий",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev2",
+                        minute: 35,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Ковалицкий Роман",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev3",
+                        minute: 43,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Бойба Николай",
+                        team: "guests",
+                    }
+                ]
+            },
 
 
         ]
