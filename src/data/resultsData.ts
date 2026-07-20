@@ -1346,7 +1346,7 @@ export const RESULTS_DATA: ResultsDataType = {
                 goalsHosts: 2,
                 goalsGuests: 1,
                 referee: 'Куратник Павел',
-                dateMatch: "11.09.2025",
+                dateMatch: "16.09.2025",
                 timeMatch: "19:00",
                 events: [
                     {
@@ -1371,6 +1371,42 @@ export const RESULTS_DATA: ResultsDataType = {
                         period: 2,
                         type: "goal",
                         playerName: "Козел Виталий",
+                        team: "guests",
+                    }
+                ]
+            },
+            {
+                id: 'game-2',
+                nameHosts: "Одиссей",
+                nameGuests: "Спутник Полесья",
+                goalsHosts: 0,
+                goalsGuests: 3,
+                referee: 'Домантович Александр',
+                dateMatch: "16.09.2025",
+                timeMatch: "19:00",
+                events: [
+                    {
+                        id: "ev1",
+                        minute: 18,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Одилбеков Гулзархан",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev2",
+                        minute: 24,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Толковский Артем",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev3",
+                        minute: 46,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Сущинский Илья",
                         team: "guests",
                     }
                 ]
