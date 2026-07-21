@@ -187,7 +187,7 @@ export const TEAMS_DATA: Record<string, TeamData> = {
             { name: '...', surname: 'Редько', number: 5, goals: 1 },
         ],
         midfielders: [
-            { name: 'Виталий', surname: 'Козел', number: 6, goals: 2 },
+            { name: 'Виталий', surname: 'Козел', number: 6, goals: 3 },
             { name: 'Павел', surname: 'Куделич', number: 7, goals: 1 },
             { name: 'Максим', surname: 'Ляшкевич', number: 8, goals: 1 },
         ],
@@ -244,7 +244,7 @@ export const TEAMS_DATA: Record<string, TeamData> = {
         points: 13,
         goalkeepers: [],
         defenders: [
-            { name: 'Юрий', surname: 'Рокало', number: 2, games: 14 },
+            { name: 'Юрий', surname: 'Рокало', number: 2, games: 14, goals: 1 },
             { name: '...', surname: 'Ахремюк', number: 44, games: 14 },
             { name: '...', surname: 'Колесникович', number: 55, games: 14 },
         ],
@@ -256,6 +256,7 @@ export const TEAMS_DATA: Record<string, TeamData> = {
         forwards: [
             { name: '...', surname: 'Воронин', number: 7, goals: 6, games: 14 },
             { name: 'Александр', surname: 'Репецкий', number: 9, goals: 1, games: 14 },
+            { name: '...', surname: 'Антонович', number: 21, goals: 1, games: 14 },
         ]
     },
     'arsenal': {
@@ -290,5 +291,5 @@ export const TEAMS_DATA: Record<string, TeamData> = {
 };
 
 
-// 7 тур
+// 8 тур
 
