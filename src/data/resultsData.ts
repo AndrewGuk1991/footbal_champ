@@ -1792,6 +1792,58 @@ export const RESULTS_DATA: ResultsDataType = {
                     },
                 ]
             },
+            {
+                id: 'game-4',
+                nameHosts: "Spirits&Витязь",
+                nameGuests: "Арсенал",
+                goalsHosts: 3,
+                goalsGuests: 1,
+                referee: 'Домантович Александр',
+                dateMatch: "18.09.2025",
+                timeMatch: "20:00",
+                events: [
+                    {
+                        id: "ev1",
+                        minute: 3,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Барыбкин",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev2",
+                        minute: 23,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Веренич",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev3",
+                        minute: 29,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Рокало Юрий",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev4",
+                        minute: 35,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Репецкий Александр",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev5",
+                        minute: 42,
+                        period: 2,
+                        type: "yellow_card",
+                        playerName: "Шахнович",
+                        team: "guests",
+                    },
+                ]
+            },
 
 
 
