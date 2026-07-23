@@ -1671,6 +1671,75 @@ export const RESULTS_DATA: ResultsDataType = {
                     },
                 ]
             },
+            {
+                id: 'game-2',
+                nameHosts: "Спутник Полесья",
+                nameGuests: "Динамо",
+                goalsHosts: 4,
+                goalsGuests: 3,
+                referee: 'Домантович Александр',
+                dateMatch: "18.09.2025",
+                timeMatch: "19:00",
+                events: [
+                    {
+                        id: "ev1",
+                        minute: 19,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Сущинский Илья",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev2",
+                        minute: 20,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Трепачко Виктор",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev3",
+                        minute: 30,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Козел Виталий",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev4",
+                        minute: 32,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Трепачко Виктор",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev5",
+                        minute: 36,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Ворон Фёдор",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev6",
+                        minute: 39,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Трепачко Виктор",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev7",
+                        minute: 47,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Козел Виталий",
+                        team: "guests",
+                    },
+
+                ]
+            },
 
 
 
