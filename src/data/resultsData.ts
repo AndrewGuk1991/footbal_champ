@@ -1740,6 +1740,83 @@ export const RESULTS_DATA: ResultsDataType = {
 
                 ]
             },
+            {
+                id: 'game-3',
+                nameHosts: "Аякс",
+                nameGuests: "Пикант",
+                goalsHosts: 1,
+                goalsGuests: 2,
+                referee: 'Гончаренко Александр',
+                dateMatch: "18.09.2025",
+                timeMatch: "20:00",
+                events: [
+                    {
+                        id: "ev1",
+                        minute: 10,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Свирид",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev2",
+                        minute: 15,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Лемешевский Даниил",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev3",
+                        minute: 23,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Головко Михаил",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev4",
+                        minute: 32,
+                        period: 2,
+                        type: "yellow_card",
+                        playerName: "Головко Михаил",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev5",
+                        minute: 36,
+                        period: 2,
+                        type: "yellow_card",
+                        playerName: "Гук Андрей",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev6",
+                        minute: 39,
+                        period: 2,
+                        type: "yellow_card",
+                        playerName: "Свирид",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev7",
+                        minute: 42,
+                        period: 2,
+                        type: "yellow_card",
+                        playerName: "Курадовец Дмитрий",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev8",
+                        minute: 47,
+                        period: 2,
+                        type: "yellow_card",
+                        playerName: "Лемешевский Даниил",
+                        team: "hosts",
+                    },
+
+                ]
+            },
 
 
 
