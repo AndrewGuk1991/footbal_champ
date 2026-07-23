@@ -1776,14 +1776,6 @@ export const RESULTS_DATA: ResultsDataType = {
                     },
                     {
                         id: "ev4",
-                        minute: 32,
-                        period: 2,
-                        type: "yellow_card",
-                        playerName: "Головко Михаил",
-                        team: "guests",
-                    },
-                    {
-                        id: "ev5",
                         minute: 36,
                         period: 2,
                         type: "yellow_card",
@@ -1791,30 +1783,13 @@ export const RESULTS_DATA: ResultsDataType = {
                         team: "hosts",
                     },
                     {
-                        id: "ev6",
-                        minute: 39,
-                        period: 2,
-                        type: "yellow_card",
-                        playerName: "Свирид",
-                        team: "guests",
-                    },
-                    {
-                        id: "ev7",
+                        id: "ev5",
                         minute: 42,
                         period: 2,
                         type: "yellow_card",
                         playerName: "Курадовец Дмитрий",
                         team: "guests",
                     },
-                    {
-                        id: "ev8",
-                        minute: 47,
-                        period: 2,
-                        type: "yellow_card",
-                        playerName: "Лемешевский Даниил",
-                        team: "hosts",
-                    },
-
                 ]
             },
 
