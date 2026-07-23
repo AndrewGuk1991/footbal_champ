@@ -1583,7 +1583,100 @@ export const RESULTS_DATA: ResultsDataType = {
 
         ]
     },
+    "match-day-9": {
+        name: "9 тур",
+        date: "18.09.2025",
+        games: [
+            {
+                id: 'game-1',
+                nameHosts: "Одиссей",
+                nameGuests: "Пинскдрев",
+                goalsHosts: 2,
+                goalsGuests: 7,
+                referee: 'Гончаренко Александр',
+                dateMatch: "18.09.2025",
+                timeMatch: "19:00",
+                events: [
+                    {
+                        id: "ev1",
+                        minute: 15,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Каменец Дмитрий",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev2",
+                        minute: 21,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Зырко Вячеслав",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev3",
+                        minute: 22,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Демчишин Артур",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev4",
+                        minute: 23,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Зырко Вячеслав",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev5",
+                        minute: 25,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Конончук Герман",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev6",
+                        minute: 29,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Зырко Вячеслав",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev7",
+                        minute: 43,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Антоник Иван",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev8",
+                        minute: 46,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Козловский Алексей",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev9",
+                        minute: 48,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Бойба Николай",
+                        team: "guests",
+                    },
+                ]
+            },
+
+
+
+        ]
+    },
 
 }
 
-// 8 тур
+// 9 тур
