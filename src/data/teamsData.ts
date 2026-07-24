@@ -247,7 +247,7 @@ export const TEAMS_DATA: Record<string, TeamData> = {
         points: 13,
         goalkeepers: [],
         defenders: [
-            { name: 'Юрий', surname: 'Рокало', number: 2, games: 14, goals: 1 },
+            { name: 'Юрий', surname: 'Рокало', number: 2, games: 14, goals: 2 },
             { name: '...', surname: 'Ахремюк', number: 44, games: 14 },
             { name: '...', surname: 'Колесникович', number: 55, games: 14 },
         ],
@@ -255,10 +255,11 @@ export const TEAMS_DATA: Record<string, TeamData> = {
             { name: 'Олег', surname: 'Вакульчик', number: 8, goals: 5, games: 14 },
             { name: 'Виталий', surname: 'Рокало', number: 13, games: 14 },
             { name: '...', surname: 'Резенко', number: 14, goals: 1, games: 14 },
+            { name: '...', surname: 'Барыбкин', number: 17, goals: 1, games: 14 },
         ],
         forwards: [
             { name: '...', surname: 'Воронин', number: 7, goals: 6, games: 14 },
-            { name: 'Александр', surname: 'Репецкий', number: 9, goals: 1, games: 14 },
+            { name: 'Александр', surname: 'Репецкий', number: 9, goals: 2, games: 7 },
             { name: '...', surname: 'Антонович', number: 21, goals: 1, games: 14 },
         ]
     },
@@ -279,9 +280,10 @@ export const TEAMS_DATA: Record<string, TeamData> = {
         defenders: [
             { name: '...', surname: 'Лукьянович', number: 3, goals: 1 },
             { name: 'Валерий', surname: 'Андрукевич', number: 12, goals: 1 },
+            { name: '...', surname: 'Веренич', number: 6, goals: 1 },
         ],
         midfielders: [
-            { name: 'Эдуард', surname: 'Малышев', number: 4 },
+            { name: '...', surname: 'Шахнович', number: 4, yellowCards: 1 },
             { name: 'Георгий', surname: 'Алексеев', number: 8 },
             { name: 'Вадим', surname: 'Беляев', number: 17 },
         ],
