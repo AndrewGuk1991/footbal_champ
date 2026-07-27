@@ -1847,8 +1847,8 @@ export const RESULTS_DATA: ResultsDataType = {
         ]
     },
     "match-day-10": {
-        name: "9 тур",
-        date: "18.09.2025",
+        name: "10 тур",
+        date: "23.09.2025",
         games: [
             {
                 id: 'game-1',
@@ -1884,6 +1884,82 @@ export const RESULTS_DATA: ResultsDataType = {
                         playerName: "Бойба Николай",
                         team: "guests",
                     }
+                ]
+            },
+            {
+                id: 'game-2',
+                nameHosts: "Спутник Полесья",
+                nameGuests: "Арсенал",
+                goalsHosts: 7,
+                goalsGuests: 0,
+                referee: 'Куратник Павел',
+                dateMatch: "23.09.2025",
+                timeMatch: "19:00",
+                events: [
+                    {
+                        id: "ev1",
+                        minute: 10,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Кунтарас Никита",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev2",
+                        minute: 29,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Пешко Георгий",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev3",
+                        minute: 34,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Трухан Роман",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev4",
+                        minute: 37,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Зельман Роман",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev5",
+                        minute: 40,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Уваров Владислав",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev6",
+                        minute: 45,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Кунтарас Никита",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev7",
+                        minute: 46,
+                        period: 2,
+                        type: "yellow_card",
+                        playerName: "Андрукевич Валерий",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev8",
+                        minute: 49,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Дубина Павел",
+                        team: "hosts",
+                    },
                 ]
             },
 
