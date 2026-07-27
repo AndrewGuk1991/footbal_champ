@@ -1844,12 +1844,52 @@ export const RESULTS_DATA: ResultsDataType = {
                     },
                 ]
             },
-
-
+        ]
+    },
+    "match-day-10": {
+        name: "9 тур",
+        date: "18.09.2025",
+        games: [
+            {
+                id: 'game-1',
+                nameHosts: "Динамо",
+                nameGuests: "Пинскдрев",
+                goalsHosts: 0,
+                goalsGuests: 3,
+                referee: 'Домантович Александр',
+                dateMatch: "23.09.2025",
+                timeMatch: "19:00",
+                events: [
+                    {
+                        id: "ev1",
+                        minute: 10,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Кононович Дмитрий",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev2",
+                        minute: 31,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Антоник Иван",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev3",
+                        minute: 46,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Бойба Николай",
+                        team: "guests",
+                    }
+                ]
+            },
 
         ]
     },
 
 }
 
-// 9 тур
+// 10 тур
