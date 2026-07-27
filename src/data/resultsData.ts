@@ -2015,6 +2015,91 @@ export const RESULTS_DATA: ResultsDataType = {
 
                 ]
             },
+            {
+                id: 'game-4',
+                nameHosts: "Spirits&Витязь",
+                nameGuests: "Пикант",
+                goalsHosts: 3,
+                goalsGuests: 5,
+                referee: 'Куратник Павел',
+                dateMatch: "23.09.2025",
+                timeMatch: "20:00",
+                events: [
+                    {
+                        id: "ev1",
+                        minute: 1,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Воронин",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev2",
+                        minute: 4,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Павелко",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev3",
+                        minute: 29,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Свирид",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev4",
+                        minute: 42,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Гузаревич",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev5",
+                        minute: 47,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Гудвилович",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev6",
+                        minute: 47,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Свирид",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev7",
+                        minute: 49,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Пасовец",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev8",
+                        minute: 49,
+                        period: 2,
+                        type: "yellow_card",
+                        playerName: "Дубойский Александр",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev9",
+                        minute: 50,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Павелко",
+                        team: "guests",
+                    },
+
+                ]
+            },
 
         ]
     },
