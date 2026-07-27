@@ -1962,6 +1962,59 @@ export const RESULTS_DATA: ResultsDataType = {
                     },
                 ]
             },
+            {
+                id: 'game-3',
+                nameHosts: "Одиссей",
+                nameGuests: "Аякс",
+                goalsHosts: 0,
+                goalsGuests: 5,
+                referee: 'Домантович Александр',
+                dateMatch: "23.09.2025",
+                timeMatch: "20:00",
+                events: [
+                    {
+                        id: "ev1",
+                        minute: 17,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Киселёв Дмитрий",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev2",
+                        minute: 33,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Киселёв Дмитрий",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev3",
+                        minute: 38,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Лемешевский Даниил",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev4",
+                        minute: 47,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Полюхович Геннадий",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev5",
+                        minute: 48,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Полюхович Геннадий",
+                        team: "guests",
+                    },
+
+                ]
+            },
 
         ]
     },
