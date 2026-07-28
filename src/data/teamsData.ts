@@ -112,12 +112,13 @@ export const TEAMS_DATA: Record<string, TeamData> = {
         goalsDifference: '+13',
         points: 24,
         goalkeepers: [
-            { name: 'Павел', surname: 'Дубина', number: 4, games: 14 },
+
         ],
         defenders: [
+            { name: 'Павел', surname: 'Дубина', number: 4, games: 14, goals: 1 },
             { name: 'Вадим', surname: 'Кислюк', number: 5, games: 14 },
-            { name: 'Георгий', surname: 'Пешко', number: 12, games: 14 },
-            { name: 'Роман', surname: 'Зельман', number: 14, games: 14 },
+            { name: 'Георгий', surname: 'Пешко', number: 12, games: 14, goals: 1 },
+            { name: 'Роман', surname: 'Зельман', number: 14, games: 14, goals: 1 },
             { name: 'Леонид', surname: 'Ребковец', number: 21, games: 14, goals: 1 },
         ],
         midfielders: [
@@ -125,13 +126,14 @@ export const TEAMS_DATA: Record<string, TeamData> = {
             { name: 'Илья', surname: 'Сущинский', number: 8, goals: 6, games: 14 },
             { name: 'Денис', surname: 'Курьянович', number: 10, games: 14, goals: 1 },
             { name: 'Богдан', surname: 'Малайчук', number: 22, games: 14 },
-            { name: 'Роман', surname: 'Трухан', number: 15, games: 14 },
+            { name: 'Роман', surname: 'Трухан', number: 15, games: 14, goals: 1 },
+            { name: 'Никита', surname: 'Кунтарас', number: 30, games: 7, goals: 2 },
         ],
         forwards: [
             { name: 'Виктор', surname: 'Трепачко', number: 7, goals: 7, games: 14 },
             { name: 'Гулзархан', surname: 'Одилбеков', number: 9, goals: 4, games: 14 },
             { name: 'Дмитрий', surname: 'Буката', number: 11, games: 14 },
-            { name: 'Владислав', surname: 'Уваров', number: 16, games: 14 },
+            { name: 'Владислав', surname: 'Уваров', number: 16, games: 14, goals: 1 },
             { name: 'Петр', surname: 'Голод', number: 99, games: 14 },
             { name: 'Артем', surname: 'Толковский', number: 19, games: 14, goals: 2 },
         ]
