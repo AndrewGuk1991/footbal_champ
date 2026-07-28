@@ -302,5 +302,5 @@ export const TEAMS_DATA: Record<string, TeamData> = {
 };
 
 
-// 10 тур
+// 11 тур
 
