@@ -290,7 +290,7 @@ export const TEAMS_DATA: Record<string, TeamData> = {
             { name: 'Вадим', surname: 'Беляев', number: 17 },
         ],
         forwards: [
-            { name: 'Виталий', surname: 'Андрукевич', number: 10, goals: 1 },
+            { name: 'Виталий', surname: 'Андрукевич', number: 10, goals: 1, yellowCards: 1 },
             { name: 'Григорий', surname: 'Егоров', number: 11 },
             { name: 'Юрий', surname: 'Козлов', number: 19 },
         ]
