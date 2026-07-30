@@ -2143,7 +2143,34 @@ export const RESULTS_DATA: ResultsDataType = {
                     }
                 ]
             },
-
+            {
+                id: 'game-2',
+                nameHosts: "Динамо",
+                nameGuests: "Аякс",
+                goalsHosts: 0,
+                goalsGuests: 2,
+                referee: 'Домантович Александр',
+                dateMatch: "25.09.2025",
+                timeMatch: "19:00",
+                events: [
+                    {
+                        id: "ev1",
+                        minute: 25,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Лемешевский Даниил",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev2",
+                        minute: 46,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Сидоревич Владимир",
+                        team: "guests",
+                    }
+                ]
+            },
 
         ]
     },
