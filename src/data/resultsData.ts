@@ -2171,6 +2171,66 @@ export const RESULTS_DATA: ResultsDataType = {
                     }
                 ]
             },
+            {
+                id: 'game-3',
+                nameHosts: "Пинскдрев",
+                nameGuests: "Арсенал",
+                goalsHosts: 5,
+                goalsGuests: 1,
+                referee: 'Домантович Александр',
+                dateMatch: "25.09.2025",
+                timeMatch: "20:00",
+                events: [
+                    {
+                        id: "ev1",
+                        minute: 16,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Антоник Иван",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev2",
+                        minute: 28,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Бойба Николай",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev3",
+                        minute: 31,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Бойба Николай",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev4",
+                        minute: 42,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Антоник Иван",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev5",
+                        minute: 45,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Веренич",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev6",
+                        minute: 49,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Бойба Николай",
+                        team: "hosts",
+                    }
+                ]
+            },
 
         ]
     },
