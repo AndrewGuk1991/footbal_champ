@@ -2103,7 +2103,51 @@ export const RESULTS_DATA: ResultsDataType = {
 
         ]
     },
+    "match-day-11": {
+        name: "11 тур",
+        date: "25.09.2025",
+        games: [
+            {
+                id: 'game-1',
+                nameHosts: "Одиссей",
+                nameGuests: "Пикант",
+                goalsHosts: 1,
+                goalsGuests: 2,
+                referee: 'Гончаренко Александр',
+                dateMatch: "25.09.2025",
+                timeMatch: "19:00",
+                events: [
+                    {
+                        id: "ev1",
+                        minute: 10,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Мовчун Павел",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev2",
+                        minute: 11,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Павелко",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev3",
+                        minute: 34,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Самуйлик",
+                        team: "hosts",
+                    }
+                ]
+            },
+
+
+        ]
+    },
 
 }
 
-// 10 тур
+// 11 тур
