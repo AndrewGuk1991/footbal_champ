@@ -2231,6 +2231,42 @@ export const RESULTS_DATA: ResultsDataType = {
                     }
                 ]
             },
+            {
+                id: 'game-2',
+                nameHosts: "Спутник Полесья",
+                nameGuests: "Spirits&Витязь",
+                goalsHosts: 3,
+                goalsGuests: 0,
+                referee: 'Гончаренко Александр',
+                dateMatch: "25.09.2025",
+                timeMatch: "20:00",
+                events: [
+                    {
+                        id: "ev1",
+                        minute: 1,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Курьянович Денис",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev2",
+                        minute: 8,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Велесницкий Геннадий",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev3",
+                        minute: 41,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Кислюк Вадим",
+                        team: "hosts",
+                    },
+                ]
+            },
 
         ]
     },
