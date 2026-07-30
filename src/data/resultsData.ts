@@ -2232,7 +2232,7 @@ export const RESULTS_DATA: ResultsDataType = {
                 ]
             },
             {
-                id: 'game-2',
+                id: 'game-4',
                 nameHosts: "Спутник Полесья",
                 nameGuests: "Spirits&Витязь",
                 goalsHosts: 3,
