@@ -116,15 +116,15 @@ export const TEAMS_DATA: Record<string, TeamData> = {
         ],
         defenders: [
             { name: 'Павел', surname: 'Дубина', number: 4, games: 14, goals: 1 },
-            { name: 'Вадим', surname: 'Кислюк', number: 5, games: 14 },
+            { name: 'Вадим', surname: 'Кислюк', number: 5, games: 14, goals: 1 },
             { name: 'Георгий', surname: 'Пешко', number: 12, games: 14, goals: 1 },
             { name: 'Роман', surname: 'Зельман', number: 14, games: 14, goals: 1 },
             { name: 'Леонид', surname: 'Ребковец', number: 21, games: 14, goals: 1 },
         ],
         midfielders: [
-            { name: 'Геннадий', surname: 'Велесницкий', number: 6, games: 14, goals: 2 },
+            { name: 'Геннадий', surname: 'Велесницкий', number: 6, games: 14, goals: 3 },
             { name: 'Илья', surname: 'Сущинский', number: 8, goals: 6, games: 14 },
-            { name: 'Денис', surname: 'Курьянович', number: 10, games: 14, goals: 1 },
+            { name: 'Денис', surname: 'Курьянович', number: 10, games: 14, goals: 2 },
             { name: 'Богдан', surname: 'Малайчук', number: 22, games: 14 },
             { name: 'Роман', surname: 'Трухан', number: 15, games: 14, goals: 1 },
             { name: 'Никита', surname: 'Кунтарас', number: 30, games: 7, goals: 2 },
