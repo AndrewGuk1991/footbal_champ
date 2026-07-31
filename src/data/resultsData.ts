@@ -2270,6 +2270,113 @@ export const RESULTS_DATA: ResultsDataType = {
 
         ]
     },
+    "match-day-12": {
+        name: "12 тур",
+        date: "30.09.2025",
+        games: [
+            {
+                id: 'game-1',
+                nameHosts: "Арсенал",
+                nameGuests: "Аякс",
+                goalsHosts: 1,
+                goalsGuests: 10,
+                referee: 'Гончаренко Александр',
+                dateMatch: "30.09.2025",
+                timeMatch: "19:00",
+                events: [
+                    {
+                        id: "ev1",
+                        minute: 5,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Лемешевский Даниил",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev2",
+                        minute: 8,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Лемешевский Даниил",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev3",
+                        minute: 16,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Гук Андрей",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev4",
+                        minute: 19,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Гук Андрей",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev5",
+                        minute: 25,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Кот Марк",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev6",
+                        minute: 26,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Лемешевский Даниил",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev7",
+                        minute: 29,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Тарапов Артём",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev8",
+                        minute: 34,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Радионов Евгений",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev9",
+                        minute: 36,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Кот Марк",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev10",
+                        minute: 42,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Лемешевский Даниил",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev11",
+                        minute: 50,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Полюхович Геннадий",
+                        team: "guests",
+                    },
+                ]
+            },
+
+        ]
+    },
 
 }
 
