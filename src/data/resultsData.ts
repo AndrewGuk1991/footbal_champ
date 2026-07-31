@@ -2280,7 +2280,7 @@ export const RESULTS_DATA: ResultsDataType = {
                 nameGuests: "Аякс",
                 goalsHosts: 1,
                 goalsGuests: 10,
-                referee: 'Гончаренко Александр',
+                referee: 'Домантович Александр',
                 dateMatch: "30.09.2025",
                 timeMatch: "19:00",
                 events: [
@@ -2370,6 +2370,42 @@ export const RESULTS_DATA: ResultsDataType = {
                         period: 2,
                         type: "goal",
                         playerName: "Полюхович Геннадий",
+                        team: "guests",
+                    },
+                ]
+            },
+            {
+                id: 'game-3',
+                nameHosts: "Спутник Полесья",
+                nameGuests: "Пикант",
+                goalsHosts: 0,
+                goalsGuests: 3,
+                referee: 'Домантович Александр',
+                dateMatch: "30.09.2025",
+                timeMatch: "20:00",
+                events: [
+                    {
+                        id: "ev1",
+                        minute: 5,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Шпаковский Даниил",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev2",
+                        minute: 14,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Свирид",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev3",
+                        minute: 19,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Павелко",
                         team: "guests",
                     },
                 ]
