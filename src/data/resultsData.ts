@@ -2421,10 +2421,21 @@ export const RESULTS_DATA: ResultsDataType = {
                     },
                 ]
             },
+            {
+                id: 'game-4',
+                nameHosts: "Динамо",
+                nameGuests: "Одиссей",
+                goalsHosts: 3,
+                goalsGuests: 0,
+                referee: '',
+                dateMatch: "30.09.2025",
+                timeMatch: "20:00",
+                events: []
+            },
 
         ]
     },
 
 }
 
-// 12 тур игры 2 и 4 - тех поражения
+// 13 тур
