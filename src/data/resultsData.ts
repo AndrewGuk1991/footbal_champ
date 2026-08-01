@@ -2375,6 +2375,17 @@ export const RESULTS_DATA: ResultsDataType = {
                 ]
             },
             {
+                id: 'game-2',
+                nameHosts: "Пинскдрев",
+                nameGuests: "Spirits&Витязь",
+                goalsHosts: 3,
+                goalsGuests: 0,
+                referee: '',
+                dateMatch: "30.09.2025",
+                timeMatch: "19:00",
+                events: []
+            },
+            {
                 id: 'game-3',
                 nameHosts: "Спутник Полесья",
                 nameGuests: "Пикант",
@@ -2416,4 +2427,4 @@ export const RESULTS_DATA: ResultsDataType = {
 
 }
 
-// 11 тур
+// 12 тур игры 2 и 4 - тех поражения
