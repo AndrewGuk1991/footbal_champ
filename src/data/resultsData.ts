@@ -2593,6 +2593,50 @@ export const RESULTS_DATA: ResultsDataType = {
 
                 ]
             },
+            {
+                id: 'game-3',
+                nameHosts: "Пинскдрев",
+                nameGuests: "Спутник Полесья",
+                goalsHosts: 3,
+                goalsGuests: 1,
+                referee: 'Домантович Александр',
+                dateMatch: "02.10.2025",
+                timeMatch: "20:00",
+                events: [
+                    {
+                        id: "ev1",
+                        minute: 10,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Зырко Вячеслав",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev2",
+                        minute: 26,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Кононович Дмитрий",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev3",
+                        minute: 29,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Зырко Вячеслав",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev4",
+                        minute: 34,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Уваров Владислав",
+                        team: "guests",
+                    },
+                ]
+            },
 
         ]
     },
