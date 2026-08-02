@@ -2435,6 +2435,90 @@ export const RESULTS_DATA: ResultsDataType = {
 
         ]
     },
+    "match-day-13": {
+        name: "13 тур",
+        date: "30.09.2025",
+        games: [
+            {
+                id: 'game-1',
+                nameHosts: "Арсенал",
+                nameGuests: "Одиссей",
+                goalsHosts: 1,
+                goalsGuests: 7,
+                referee: 'Куратник Павел',
+                dateMatch: "02.10.2025",
+                timeMatch: "19:00",
+                events: [
+                    {
+                        id: "ev1",
+                        minute: 7,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Андрукевич Валерий",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev2",
+                        minute: 17,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Виннель Алексей",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev3",
+                        minute: 26,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Виннель Алексей",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev4",
+                        minute: 30,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Тарапов Артем (автогол)",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev5",
+                        minute: 35,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Пивень",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev6",
+                        minute: 44,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Цебрук Назар",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev7",
+                        minute: 46,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Лодыга Александр",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev8",
+                        minute: 48,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Виннель Алексей",
+                        team: "guests",
+                    },
+
+                ]
+            },
+
+        ]
+    },
 
 }
 
