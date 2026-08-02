@@ -2516,6 +2516,83 @@ export const RESULTS_DATA: ResultsDataType = {
 
                 ]
             },
+            {
+                id: 'game-2',
+                nameHosts: "Аякс",
+                nameGuests: "Spirits&Витязь",
+                goalsHosts: 4,
+                goalsGuests: 2,
+                referee: 'Домантович Александр',
+                dateMatch: "02.10.2025",
+                timeMatch: "19:00",
+                events: [
+                    {
+                        id: "ev1",
+                        minute: 21,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Сидоревич Владимир",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev2",
+                        minute: 25,
+                        period: 1,
+                        type: "goal",
+                        playerName: "Лемешевский Даниил",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev3",
+                        minute: 27,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Колб",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev4",
+                        minute: 30,
+                        period: 2,
+                        type: "yellow_card",
+                        playerName: "Лемешевский Даниил",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev5",
+                        minute: 36,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Полюхович Павел",
+                        team: "hosts",
+                    },
+                    {
+                        id: "ev6",
+                        minute: 39,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Колупаев",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev7",
+                        minute: 42,
+                        period: 2,
+                        type: "yellow_card",
+                        playerName: "Рокало Юрий",
+                        team: "guests",
+                    },
+                    {
+                        id: "ev8",
+                        minute: 46,
+                        period: 2,
+                        type: "goal",
+                        playerName: "Лемешевский Даниил",
+                        team: "hosts",
+                    },
+
+                ]
+            },
 
         ]
     },
