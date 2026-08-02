@@ -2637,6 +2637,17 @@ export const RESULTS_DATA: ResultsDataType = {
                     },
                 ]
             },
+            {
+                id: 'game-4',
+                nameHosts: "Динамо",
+                nameGuests: "Пикант",
+                goalsHosts: 2,
+                goalsGuests: 3,
+                referee: '',
+                dateMatch: "02.10.2025",
+                timeMatch: "20:00",
+                events: []
+            },
 
         ]
     },
