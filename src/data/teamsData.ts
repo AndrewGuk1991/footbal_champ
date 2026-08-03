@@ -83,11 +83,12 @@ export const TEAMS_DATA: Record<string, TeamData> = {
             { name: 'Михаил', surname: 'Колесник', number: 2, games: 14, goals: 1 },
             { name: 'Андрей', surname: 'Вайтович', number: 3, games: 14 },
             { name: 'Юрий', surname: 'Шелест', number: 4, games: 14, goals: 1 },
+            { name: 'Антон', surname: 'Домнич', number: 31, games: 14 },
         ],
         midfielders: [
             { name: 'Дмитрий', surname: 'Каменец', number: 6, goals: 4, games: 14 },
             { name: 'Станислав', surname: 'Кулина', number: 9, games: 14, goals: 1 },
-            { name: 'Дмитрий', surname: 'Кононович', number: 8, games: 14, goals: 2 },
+            { name: 'Дмитрий', surname: 'Кононович', number: 8, games: 14, goals: 3 },
             { name: 'Иван', surname: 'Антоник', number: 10, goals: 5, games: 14 },
             { name: 'Дмитрий', surname: 'Малец', number: 14, games: 14, goals: 1 },
         ],
@@ -133,7 +134,7 @@ export const TEAMS_DATA: Record<string, TeamData> = {
             { name: 'Виктор', surname: 'Трепачко', number: 7, goals: 7, games: 14 },
             { name: 'Гулзархан', surname: 'Одилбеков', number: 9, goals: 4, games: 14 },
             { name: 'Дмитрий', surname: 'Буката', number: 11, games: 14 },
-            { name: 'Владислав', surname: 'Уваров', number: 16, games: 14, goals: 1 },
+            { name: 'Владислав', surname: 'Уваров', number: 16, games: 14, goals: 2 },
             { name: 'Петр', surname: 'Голод', number: 99, games: 14 },
             { name: 'Артем', surname: 'Толковский', number: 19, games: 14, goals: 2 },
         ]
