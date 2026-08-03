@@ -220,14 +220,14 @@ export const TEAMS_DATA: Record<string, TeamData> = {
 
         ],
         defenders: [
-            { name: 'Назар', surname: 'Цебрук', number: 3, goals: 1, games: 14 },
+            { name: 'Назар', surname: 'Цебрук', number: 3, goals: 2, games: 14 },
             { name: 'Александр', surname: 'Манюк', number: 15, goals: 2, games: 14 },
             { name: '...', surname: 'Колбович', number: 18, goals: 1, games: 14 },
             { name: '...', surname: 'Литвинчук', number: 14, goals: 2 , games: 14},
         ],
         midfielders: [
             { name: 'Арсений', surname: 'Попитич', number: 16, goals: 1, games: 14 },
-            { name: 'Александр', surname: 'Лодыга', number: 17, goals: 1, games: 14 },
+            { name: 'Александр', surname: 'Лодыга', number: 17, goals: 2, games: 14 },
             { name: 'Алексей', surname: 'Козловский', number: 20, games: 14, goals: 1 }, //1 автогол
             { name: 'Герман', surname: 'Конончук', number: 21, goals: 2, games: 14 },
             { name: '...', surname: 'Дешко', number: 12, goals: 1, games: 14 },
@@ -235,7 +235,8 @@ export const TEAMS_DATA: Record<string, TeamData> = {
         forwards: [
             { name: '...', surname: 'Ляшук', number: 11, goals: 4, games: 14 },
             { name: '...', surname: 'Пивень', number: 19, goals: 4, games: 14 },
-            { name: '...', surname: 'Самуйлик', number: 25, goals: 4, games: 14 }
+            { name: '...', surname: 'Самуйлик', number: 25, goals: 4, games: 14 },
+            { name: 'Алексей', surname: 'Виннель', number: 31, goals: 3, games: 7 },
         ]
     },
     'vityaz': {
@@ -287,6 +288,7 @@ export const TEAMS_DATA: Record<string, TeamData> = {
             { name: '...', surname: 'Лукьянович', number: 3, goals: 1 },
             { name: 'Валерий', surname: 'Андрукевич', number: 12, goals: 2 },
             { name: '...', surname: 'Веренич', number: 6, goals: 2 },
+            { name: 'Артём', surname: 'Тарапов', number: 21 }, // 1 автогол
         ],
         midfielders: [
             { name: '...', surname: 'Шахнович', number: 4, yellowCards: 1 },
