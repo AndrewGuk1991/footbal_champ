@@ -285,7 +285,7 @@ export const TEAMS_DATA: Record<string, TeamData> = {
         ],
         defenders: [
             { name: '...', surname: 'Лукьянович', number: 3, goals: 1 },
-            { name: 'Валерий', surname: 'Андрукевич', number: 12, goals: 1 },
+            { name: 'Валерий', surname: 'Андрукевич', number: 12, goals: 2 },
             { name: '...', surname: 'Веренич', number: 6, goals: 2 },
         ],
         midfielders: [
@@ -302,5 +302,5 @@ export const TEAMS_DATA: Record<string, TeamData> = {
 };
 
 
-// 11 тур
+// 13 тур
 
